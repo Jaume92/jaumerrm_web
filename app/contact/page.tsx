@@ -11,7 +11,7 @@ export default function ContactPage() {
 
         <p className="text-gray-700 max-w-xl mb-10">
           ¿Quieres hablar sobre proyectos, colaboración o propuestas de trabajo?
-          Aquí tienes todas mis vías de contacto 
+          Puedes contactarme directamente por cualquiera de estos canales.
         </p>
 
         {/* INFO DE CONTACTO */}
@@ -20,7 +20,12 @@ export default function ContactPage() {
           {/* EMAIL */}
           <div className="rounded-xl border bg-white shadow-sm p-6 hover:shadow-md transition">
             <h2 className="text-lg font-semibold text-black mb-1">📧 Email</h2>
-            <p className="text-gray-600">jaumeni@gmail.com</p>
+            <a
+              href="mailto:jaumeni@gmail.com"
+              className="text-orange-600 hover:underline"
+            >
+              jaumeni@gmail.com
+            </a>
           </div>
 
           {/* GITHUB */}
@@ -52,7 +57,12 @@ export default function ContactPage() {
           {/* TELÉFONO */}
           <div className="rounded-xl border bg-white shadow-sm p-6 hover:shadow-md transition">
             <h2 className="text-lg font-semibold text-black mb-1">📱 Teléfono</h2>
-            <p className="text-gray-600">+34 633 897 821</p>
+            <a
+              href="tel:+34633897821"
+              className="text-orange-600 hover:underline"
+            >
+              +34 633 897 821
+            </a>
           </div>
         </div>
 
@@ -60,7 +70,7 @@ export default function ContactPage() {
         <div className="mt-12">
           <Link
             href="/"
-            className="inline-block px-6 py-3 rounded-lg bg-orange-500 text-white hover:bg-orange-600 transition"
+            className="inline-block px-6 py-3 rounded-lg bg-orange-500 text-white hover:bg-orange-600 active:scale-95 transition"
           >
             ← Volver al inicio
           </Link>
