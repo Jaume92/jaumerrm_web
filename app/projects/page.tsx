@@ -56,26 +56,6 @@ export default function Projects() {
             </p>
 
             {/* ACTIONS */}
-            <div className="mt-5 flex flex-wrap gap-3">
-              <a
-                href="PON_AQUI_LA_DEMO"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 text-sm rounded-lg bg-orange-500 text-white transition hover:bg-orange-600 active:scale-95 cursor-pointer"
-              >
-                Ver demo
-              </a>
-
-              <a
-                href="PON_AQUI_EL_REPO"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 text-sm rounded-lg border transition hover:bg-gray-100 active:scale-95 cursor-pointer"
-              >
-                Ver código
-              </a>
-            </div>
-
           </div>
 
           {/* PROYECTO 2 */}
@@ -106,26 +86,6 @@ export default function Projects() {
             </p>
 
             {/* ACTIONS */}
-            <div className="mt-5 flex flex-wrap gap-3">
-              <a
-                href="PON_AQUI_LA_DEMO"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 text-sm rounded-lg bg-orange-500 text-white transition hover:bg-orange-600 active:scale-95 cursor-pointer"
-              >
-                Ver demo
-              </a>
-
-              <a
-                href="PON_AQUI_EL_REPO"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 text-sm rounded-lg border transition hover:bg-gray-100 active:scale-95 cursor-pointer"
-              >
-                Ver código
-              </a>
-            </div>
-
           </div>
 
           {/* PROYECTO 3 */}
