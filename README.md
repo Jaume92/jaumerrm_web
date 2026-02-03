@@ -1,35 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Portfolio Profesional — jaumerrm.dev
 
-## Getting Started
+Sitio web personal diseñado para mostrar proyectos de inteligencia artificial aplicada, automatización y desarrollo de sistemas basados en datos orientados a casos reales y entornos productivos.
 
-First, run the development server:
+Este portfolio centraliza mis proyectos técnicos, perfil profesional y vías de contacto.
 
-```bash
+Objetivo del Proyecto
+
+El objetivo principal de esta web es:
+
+Presentar proyectos de IA aplicada y desarrollo de software
+
+Mostrar soluciones técnicas orientadas a producción
+
+Ofrecer una presencia profesional online para empresas y reclutadores
+
+Centralizar enlaces a proyectos, GitHub y datos de contacto
+
+Contenido Destacado
+
+El portfolio incluye:
+
+Proyectos de inteligencia artificial aplicada
+
+Sistemas de visión artificial
+
+Automatización de procesos
+
+Aplicaciones backend y APIs
+
+Soluciones orientadas a negocio e industria
+
+Tecnologías Utilizadas
+
+TypeScript
+
+HTML
+
+CSS
+
+Framework frontend moderno
+
+Diseño responsive
+
+Estructura del Proyecto
+/public
+/src
+/assets
+/components
+/pages
+
+
+La estructura está pensada para ser modular, escalable y fácil de mantener.
+
+Despliegue
+
+El sitio web está disponible públicamente en:
+
+https://jaumerrm.dev
+
+Desarrollo Local
+
+Clonar el repositorio:
+
+git clone https://github.com/Jaume92/jaumerrm_web.git
+cd jaumerrm_web
+
+
+Instalar dependencias:
+
+npm install
+
+
+Ejecutar entorno de desarrollo:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Mejoras Futuras
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Sistema de filtrado de proyectos
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Sección de artículos técnicos o blog
 
-## Learn More
+Optimización de rendimiento
 
-To learn more about Next.js, take a look at the following resources:
+Mejora de posicionamiento SEO
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Integración de formulario de contacto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Autor
 
-## Deploy on Vercel
+Desarrollado por Jaume
+
+Enfocado en inteligencia artificial aplicada, automatización y desarrollo de sistemas productivos.
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
