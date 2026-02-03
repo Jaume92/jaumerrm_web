@@ -11,43 +11,46 @@ export default function Home() {
     <main className="min-h-screen bg-gradient-to-br from-white via-orange-50 to-orange-100 animated-bg text-gray-900">
       <div className="absolute inset-0 -z-10 bg-gradient-to-tr from-orange-200/30 via-transparent to-orange-300/20 blur-3xl"></div>
 
-      {/* HEADER */}
-      <header className="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+      {/* HEADER VACÍO */}
+      <header className="max-w-5xl mx-auto px-6 py-2 md:py-4"></header>
 
-        <span className="font-semibold text-lg tracking-tight">
-          Jaume RRM
-        </span>
+      {/* HERO */}
+      <section className="relative max-w-6xl mx-auto px-6 pt-8 pb-10 md:pt-16 md:pb-24 grid md:grid-cols-2 gap-8 items-center animate-fade-in">
 
-        {/* MENU */}
-        <div className="relative">
+        {/* HAMBURGUESA */}
+        <div className="absolute right-6 top-6 md:top-8 z-50">
 
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="w-10 h-10 flex items-center justify-center rounded-lg border bg-white/70 backdrop-blur hover:bg-orange-100 transition"
+            className="w-10 h-10 flex items-center justify-center rounded-lg border bg-white/80 backdrop-blur hover:bg-orange-100 transition shadow-sm"
           >
             ☰
           </button>
 
           {menuOpen && (
-            <div className="absolute right-0 mt-3 w-56 rounded-xl border bg-white/90 backdrop-blur shadow-xl p-3 z-50">
+            <div className="absolute right-0 mt-3 w-56 rounded-xl border bg-white/95 backdrop-blur shadow-xl p-3">
 
-              <Link href="/projects" onClick={() => setMenuOpen(false)} className="block px-3 py-2 rounded-lg hover:bg-orange-100 transition">
+              <Link href="/projects" onClick={() => setMenuOpen(false)} className="block px-3 py-2 rounded-lg hover:bg-orange-100">
                 Proyectos
               </Link>
 
-              <Link href="/cv" onClick={() => setMenuOpen(false)} className="block px-3 py-2 rounded-lg hover:bg-orange-100 transition">
+              <Link href="/cv" onClick={() => setMenuOpen(false)} className="block px-3 py-2 rounded-lg hover:bg-orange-100">
                 CV
               </Link>
 
-              <Link href="/dam" onClick={() => setMenuOpen(false)} className="block px-3 py-2 rounded-lg hover:bg-orange-100 transition">
+              <Link href="/dam" onClick={() => setMenuOpen(false)} className="block px-3 py-2 rounded-lg hover:bg-orange-100">
                 DAM / Formación
               </Link>
 
-              <Link href="/contact" onClick={() => setMenuOpen(false)} className="block px-3 py-2 rounded-lg hover:bg-orange-100 transition">
+              <Link href="/contact" onClick={() => setMenuOpen(false)} className="block px-3 py-2 rounded-lg hover:bg-orange-100">
                 Contacto
               </Link>
 
-              <a href="https://github.com/Jaume92" target="_blank" className="block px-3 py-2 rounded-lg hover:bg-orange-100 transition">
+              <a
+                href="https://github.com/Jaume92"
+                target="_blank"
+                className="block px-5 py-2 rounded-lg hover:bg-orange-100"
+              >
                 GitHub
               </a>
 
@@ -55,11 +58,6 @@ export default function Home() {
           )}
 
         </div>
-
-      </header>
-
-      {/* HERO */}
-      <section className="max-w-6xl mx-auto px-6 pt-8 pb-10 md:pt-16 md:pb-24 grid md:grid-cols-2 gap-8 items-center animate-fade-in">
 
         {/* TEXTO */}
         <div>
@@ -77,26 +75,30 @@ export default function Home() {
             Backend, web y data aplicada usando Python, automatización y machine learning.
           </p>
 
-          {/* STACK BADGES */}
+          {/* STACK */}
           <div className="mt-3 flex flex-wrap gap-2 text-xs md:text-sm">
-
             <span className="px-3 py-1 rounded-full bg-white/70 border">Python</span>
             <span className="px-3 py-1 rounded-full bg-white/70 border">FastAPI</span>
             <span className="px-3 py-1 rounded-full bg-white/70 border">Next.js</span>
-
             <span className="px-3 py-1 rounded-full bg-white/70 border">Machine Learning</span>
             <span className="px-3 py-1 rounded-full bg-white/70 border">Power BI</span>
             <span className="px-3 py-1 rounded-full bg-white/70 border">Excel</span>
-
           </div>
 
+          {/* BOTONES */}
           <div className="mt-6 flex flex-wrap gap-3">
 
-            <Link href="/projects" className="px-6 py-3 rounded-lg bg-orange-500 text-white font-medium transition hover:bg-orange-600 hover:scale-[1.03] w-full sm:w-auto">
+            <Link
+              href="/projects"
+              className="px-6 py-3 rounded-lg bg-orange-500 text-white font-medium transition hover:bg-orange-600 hover:scale-[1.03] w-full sm:w-auto"
+            >
               Ver proyectos reales
             </Link>
 
-            <Link href="/contact" className="px-6 py-3 rounded-lg border font-medium transition hover:bg-orange-100 hover:scale-[1.03] w-full sm:w-auto">
+            <Link
+              href="/contact"
+              className="px-6 py-3 rounded-lg border font-medium transition hover:bg-orange-100 hover:scale-[1.03] w-full sm:w-auto"
+            >
               Contactar
             </Link>
 
@@ -105,37 +107,35 @@ export default function Home() {
           {/* METRICAS */}
           <div className="mt-6 grid grid-cols-2 gap-6 md:flex md:gap-8">
 
-            <div className="text-center transition hover:-translate-y-1">
-              <div className="text-3xl font-bold text-gray-900">5+</div>
-              <div className="text-sm text-gray-600">proyectos reales</div>
+            <div className="text-center">
+              <div className="text-3xl font-bold">5+</div>
+              <div className="text-sm text-gray-600">Proyectos reales</div>
             </div>
 
-            <div className="text-center transition hover:-translate-y-1">
-              <div className="text-3xl font-bold text-gray-900">3</div>
-              <div className="text-sm text-gray-600">sistemas productivos</div>
+            <div className="text-center">
+              <div className="text-3xl font-bold">3</div>
+              <div className="text-sm text-gray-600">Sistemas productivos</div>
             </div>
 
-            <div className="text-center col-span-2 md:col-span-1 transition hover:-translate-y-1">
-              <div className="text-3xl font-bold text-gray-900">100%</div>
-              <div className="text-sm text-gray-600">código propio</div>
+            <div className="text-center col-span-2 md:col-span-1">
+              <div className="text-3xl font-bold">Activo</div>
+              <div className="text-sm text-gray-600">aprendizaje continuo</div>
             </div>
 
           </div>
 
-        </div> 
+        </div>
 
         {/* IMAGEN */}
         <div className="flex justify-center">
           <div className="relative">
 
             <div className="absolute inset-0 bg-orange-300/20 blur-3xl rounded-full"></div>
-            <div className="absolute inset-0 rounded-full border border-orange-300/20 blur-sm"></div>
-            <div className="absolute bottom-[-28px] left-1/2 -translate-x-1/2 w-70 h-32 bg-black/10 blur-xl rounded-full"></div>
 
             <img
               src="/portada.png"
               alt="Jaume profile"
-              className="relative w-44 sm:w-52 md:w-80 -translate-y-2 md:translate-y-0 transition-all duration-500 hover:scale-[1.10] hover:-translate-y-8"
+              className="relative w-44 sm:w-52 md:w-80 -translate-y-2 md:translate-y-0 transition-all duration-500 hover:scale-[1.06]"
             />
 
           </div>
@@ -210,7 +210,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PROYECTOS DESTACADOS */}
+      {/* PROYECTOS */}
       <section className="max-w-5xl mx-auto px-6 pb-20">
         <h2 className="text-2xl font-semibold">Proyectos reales</h2>
 
