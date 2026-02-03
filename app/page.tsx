@@ -12,13 +12,14 @@ export default function Home() {
       <div className="absolute inset-0 -z-10 bg-gradient-to-tr from-orange-200/30 via-transparent to-orange-300/20 blur-3xl"></div>
 
       {/* HEADER VACÍO */}
-      <header className="max-w-5xl mx-auto px-6 py-2 md:py-4"></header>
+      <header className="max-w-5xl mx-auto px-6 py-1"></header>
+
 
       {/* HERO */}
-      <section className="relative max-w-6xl mx-auto px-6 pt-8 pb-10 md:pt-16 md:pb-24 grid md:grid-cols-2 gap-8 items-center animate-fade-in">
+      <section className="relative max-w-7xl mx-auto px-6 pt-4 pb-10 md:pt-10 md:pb-24 grid md:grid-cols-2 gap-8 items-center animate-fade-in">
 
         {/* HAMBURGUESA */}
-        <div className="absolute right-6 top-6 md:top-8 z-50">
+        <div className="absolute right-6 top-12 md:top-8 z-50">
 
           <button
             onClick={() => setMenuOpen(!menuOpen)}
@@ -67,12 +68,12 @@ export default function Home() {
           </span>
 
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight">
-            Desarrollo soluciones reales en IA y backend
+            Desarrollo soluciones en IA y backend
             <span className="text-orange-500"> con enfoque práctico</span>
           </h1>
 
           <p className="mt-4 text-base md:text-lg text-gray-600 max-w-xl">
-            Backend, web y data aplicada usando Python, automatización y machine learning.
+            Aprendo creando sistemas inteligentes aplicados a problemas reales.
           </p>
 
           {/* STACK */}
@@ -83,6 +84,7 @@ export default function Home() {
             <span className="px-3 py-1 rounded-full bg-white/70 border">Machine Learning</span>
             <span className="px-3 py-1 rounded-full bg-white/70 border">Power BI</span>
             <span className="px-3 py-1 rounded-full bg-white/70 border">Excel</span>
+            
           </div>
 
           {/* BOTONES */}
@@ -92,7 +94,7 @@ export default function Home() {
               href="/projects"
               className="px-6 py-3 rounded-lg bg-orange-500 text-white font-medium transition hover:bg-orange-600 hover:scale-[1.03] w-full sm:w-auto"
             >
-              Ver proyectos reales
+              Ver proyectos !
             </Link>
 
             <Link
@@ -109,7 +111,7 @@ export default function Home() {
 
             <div className="text-center">
               <div className="text-3xl font-bold">5+</div>
-              <div className="text-sm text-gray-600">Proyectos reales</div>
+              <div className="text-sm text-gray-600">Proyectos </div>
             </div>
 
             <div className="text-center">
@@ -119,7 +121,7 @@ export default function Home() {
 
             <div className="text-center col-span-2 md:col-span-1">
               <div className="text-3xl font-bold">Activo</div>
-              <div className="text-sm text-gray-600">aprendizaje continuo</div>
+              <div className="text-sm text-gray-600">Aprendizaje continuo</div>
             </div>
 
           </div>
@@ -146,7 +148,7 @@ export default function Home() {
       {/* DIFERENCIADOR */}
       <section className="max-w-5xl mx-auto px-6 pb-16">
         <div className="p-4 rounded-xl bg-orange-100 text-orange-800 text-sm">
-          Construyendo experiencia en IA aplicada y automatización a través de proyectos reales.
+          Construyendo experiencia poco a poco en IA aplicada y automatización a través de proyectos reales.
         </div>
       </section>
 
@@ -159,7 +161,7 @@ export default function Home() {
           <div className="rounded-xl border bg-white/70 backdrop-blur p-5 shadow-sm transition hover:shadow-md hover:-translate-y-1">
             <h3 className="font-semibold">IA aplicada</h3>
             <p className="mt-2 text-sm text-gray-600">
-              Implemento visión artificial, RAG y asistentes inteligentes para automatizar tareas reales y aportar valor directo.
+              Implemento visión artificial, RAG y asistentes inteligentes para automatizar tareas repetiitvas y aportar valor .
             </p>
           </div>
 
@@ -173,7 +175,7 @@ export default function Home() {
           <div className="rounded-xl border bg-white/70 backdrop-blur p-5 shadow-sm transition hover:shadow-md hover:-translate-y-1">
             <h3 className="font-semibold">Sistemas locales</h3>
             <p className="mt-2 text-sm text-gray-600">
-              Despliego soluciones productivas en Linux y mini PCs evitando dependencia innecesaria de cloud.
+              Despliego soluciones productivas en Ubuntu y mini PCs evitando asi dependencia innecesaria de cloud.
             </p>
           </div>
 
@@ -189,21 +191,21 @@ export default function Home() {
           <div className="p-5 rounded-xl border bg-white/70">
             <h3 className="font-semibold">Problema real</h3>
             <p className="mt-2 text-sm text-gray-600">
-              Analizo el contexto operativo antes de escribir código.
+              Primero defino el problema y los objetivos a cumplir.
             </p>
           </div>
 
           <div className="p-5 rounded-xl border bg-white/70">
             <h3 className="font-semibold">Construcción práctica</h3>
             <p className="mt-2 text-sm text-gray-600">
-              Desarrollo sistemas funcionales con foco en estabilidad.
+              Desarrollo sistemas buscando que sean estables y fiables.
             </p>
           </div>
 
           <div className="p-5 rounded-xl border bg-white/70">
             <h3 className="font-semibold">Iteración</h3>
             <p className="mt-2 text-sm text-gray-600">
-              Pruebo, optimizo y mejoro hasta cumplir el objetivo.
+              Pruebo y mejoro hasta cumplir los objetivos definidos.
             </p>
           </div>
 
