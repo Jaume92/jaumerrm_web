@@ -49,6 +49,18 @@ export default function CVPage() {
 
       education: [
         {
+          title: "Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM) — En curso",
+          place: "ILERNA Online",
+          date: "2025 — Actualidad",
+          details: [
+            "Programación (Java, lógica y estructuras)",
+            "Bases de datos relacionales (SQL)",
+            "Sistemas informáticos",
+            "Lenguajes de marcas y digitalización",
+            "Entornos de desarrollo"
+          ]
+        },
+        {
           title: "Máster en Data Science e Inteligencia Artificial",
           place: "Núclio School — Barcelona",
           date: "2023 — 2024",
@@ -151,6 +163,18 @@ export default function CVPage() {
 
       education: [
         {
+          title: "Higher Technician in Multiplatform Application Development (DAM) — In progress",
+          place: "ILERNA Online",
+          date: "2025 — Present",
+          details: [
+            "Programming fundamentals and software development",
+            "Relational databases (SQL)",
+            "Computer systems",
+            "Markup languages and digitalization",
+            "Development environments"
+          ]
+        },
+        {
           title: "Master in Data Science and Artificial Intelligence",
           place: "Núclio School — Barcelona",
           date: "2023 — 2024",
@@ -246,9 +270,8 @@ export default function CVPage() {
               {t.role}
             </p>
             <p className="mt-1 text-sm text-gray-500">
-                        📍 Zafra (Badajoz), España
-                            </p>
-
+              📍 Zafra (Badajoz), España
+            </p>
 
             {/* BOTONES */}
             <div className="mt-5 flex flex-wrap justify-center md:justify-start gap-3">

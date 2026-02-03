@@ -1,6 +1,18 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
+
+const powerbiImages = [
+  "/projects/powerbi_1.png",
+  "/projects/powerbi_2.png",
+  "/projects/powerbi_3.png",
+];
 
 export default function Projects() {
+
+  const [current, setCurrent] = useState(0);
+
   return (
     <main className="min-h-screen bg-gradient-to-br from-white via-orange-50 to-white text-gray-900 px-6 py-16">
 
@@ -20,15 +32,17 @@ export default function Projects() {
         <div className="mb-12">
           <h1 className="text-3xl md:text-4xl font-bold">Proyectos reales</h1>
           <p className="mt-4 text-gray-600 max-w-2xl">
-            Sistemas diseñados y desarrollados para resolver problemas reales
-            mediante automatización, backend, web comercial y visión artificial.
+            Colección de sistemas desarrollados con enfoque productivo y orientados
+            a resolver problemas reales mediante automatización, visión artificial,
+            analítica industrial y backend aplicado. Todos los proyectos están diseñados
+            con mentalidad de despliegue real, no como simples pruebas académicas.
           </p>
         </div>
 
         {/* LISTA PROYECTOS */}
         <div className="space-y-8">
 
-          {/* PROYECTO 1 */}
+          {/* POLLERIA */}
           <div className="rounded-xl border bg-white/70 backdrop-blur p-6 shadow-sm transition hover:shadow-md">
 
             <h2 className="text-xl font-semibold">
@@ -36,101 +50,216 @@ export default function Projects() {
             </h2>
 
             <p className="mt-3 text-sm text-gray-600">
-              Desarrollo de una solución local para digitalizar el flujo completo
-              de pedidos en un negocio físico, eliminando procesos manuales.
+              Sistema desarrollado para digitalizar el flujo completo de pedidos
+              en un negocio físico de comida para llevar. El objetivo principal es
+              eliminar papel, errores manuales y dependencias de sistemas propietarios,
+              ofreciendo una solución local, rápida y estable.
             </p>
 
             <ul className="mt-4 text-sm space-y-2">
-              <li>✅ Backend REST con FastAPI</li>
-              <li>✅ Interfaz web para mostrador y cocina</li>
-              <li>✅ Integración con impresora térmica USB</li>
-              <li>✅ Arquitectura local sin dependencia cloud</li>
+              <li>✅ API backend REST desarrollada con FastAPI</li>
+              <li>✅ Interfaz web diferenciada para mostrador y cocina</li>
+              <li>✅ Integración directa con impresora térmica</li>
+              <li>✅ Arquitectura local optimizada para bajo consumo de recursos</li>
             </ul>
 
             <p className="mt-4 text-sm">
-              <b>Resultado:</b> mejora del flujo operativo y reducción de errores manuales.
+              <b>Impacto:</b> mejora del flujo operativo, reducción de tiempos de pedido
+              y disminución de errores humanos en entornos de alta rotación.
             </p>
 
             <p className="mt-2 text-sm">
-              <b>Stack:</b> Python, FastAPI, JavaScript, Linux
+              <b>Stack:</b> Python, FastAPI, JavaScript
             </p>
 
-            {/* ACTIONS */}
+            <div className="mt-5">
+              <a
+                href="https://github.com/Jaume92/Polleria_app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 text-sm rounded-lg border transition hover:bg-gray-100"
+              >
+                Ver repositorio
+              </a>
+            </div>
+
           </div>
 
-          {/* PROYECTO 2 */}
+          {/* DETECTOR HUMO */}
           <div className="rounded-xl border bg-white/70 backdrop-blur p-6 shadow-sm transition hover:shadow-md">
 
             <h2 className="text-xl font-semibold">
-              Sistema de detección de humo y fuego — Visión artificial
+              Detector de humo y fuego — Computer Vision
             </h2>
 
             <p className="mt-3 text-sm text-gray-600">
-              Desarrollo de un sistema de detección temprana de incendios
-              mediante procesamiento de vídeo en tiempo real.
+              Sistema de detección temprana de incendios basado en análisis de vídeo
+              en tiempo real. El proyecto está enfocado a escenarios industriales
+              y entornos de vigilancia donde la detección precoz es crítica para
+              reducir daños materiales y riesgos humanos.
             </p>
 
             <ul className="mt-4 text-sm space-y-2">
-              <li>✅ Entrenamiento de modelo YOLOv8</li>
-              <li>✅ Procesamiento de vídeo con OpenCV</li>
+              <li>✅ Entrenamiento personalizado de modelo YOLOv8</li>
+              <li>✅ Procesamiento de vídeo en tiempo real con OpenCV</li>
               <li>✅ Detección automática de eventos críticos</li>
-              <li>✅ Preparado para despliegue en entornos locales</li>
+              <li>✅ Arquitectura preparada para despliegue local o edge</li>
             </ul>
 
             <p className="mt-4 text-sm">
-              <b>Resultado:</b> detección temprana de riesgo y reducción de tiempo de reacción.
+              <b>Impacto:</b> reducción del tiempo de reacción ante incendios
+              y aumento de la seguridad operativa en entornos críticos.
             </p>
 
             <p className="mt-2 text-sm">
               <b>Stack:</b> Python, YOLOv8, OpenCV
             </p>
 
-            {/* ACTIONS */}
+            <div className="mt-5">
+              <a
+                href="https://github.com/Jaume92/Proyecto_detector_humo_YoloV8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 text-sm rounded-lg border transition hover:bg-gray-100"
+              >
+                Ver repositorio
+              </a>
+            </div>
+
           </div>
 
-          {/* PROYECTO 3 */}
+          {/* SMART FACTORY */}
           <div className="rounded-xl border bg-white/70 backdrop-blur p-6 shadow-sm transition hover:shadow-md">
 
             <h2 className="text-xl font-semibold">
-              Catálogo web de maquinaria industrial — Captación comercial
+              Smart Factory Control Tower — Lean Analytics
             </h2>
 
             <p className="mt-3 text-sm text-gray-600">
-              Desarrollo de una landing comercial optimizada para mostrar producto,
-              captar leads y facilitar contacto directo con clientes.
+              Plataforma de simulación industrial y monitorización de KPIs Lean
+              orientada a visualizar rendimiento productivo en tiempo real.
+              El proyecto reproduce escenarios reales de planta para análisis
+              de eficiencia, cuellos de botella y toma de decisiones operativas.
             </p>
 
             <ul className="mt-4 text-sm space-y-2">
-              <li>✅ Diseño responsive optimizado para móvil</li>
-              <li>✅ Integración directa con WhatsApp Business</li>
-              <li>✅ Estructura enfocada a conversión</li>
-              <li>✅ Preparada para despliegue en Vercel</li>
+              <li>✅ Simulación de producción industrial</li>
+              <li>✅ KPIs Lean: OEE, rendimiento y disponibilidad</li>
+              <li>✅ Dashboard web interactivo</li>
+              <li>✅ Arquitectura orientada a datos en tiempo real</li>
             </ul>
 
             <p className="mt-4 text-sm">
-              <b>Resultado:</b> generación directa de leads comerciales desde la web.
+              <b>Impacto:</b> mejora de visibilidad operativa y soporte a decisiones
+              basadas en datos para entornos industriales.
             </p>
 
             <p className="mt-2 text-sm">
-              <b>Stack:</b> HTML, CSS, JavaScript, Git, Vercel
+              <b>Stack:</b> Python, JavaScript, HTML
             </p>
 
-            {/* ACTIONS */}
-            <div className="mt-5 flex flex-wrap gap-3">
+            <div className="mt-5">
               <a
-                href="https://catalogo-test-psi.vercel.app/"
+                href="https://github.com/Jaume92/Smart-Factory-Control-Tower"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 text-sm rounded-lg bg-orange-500 text-white transition hover:bg-orange-600 active:scale-95 cursor-pointer"
+                className="px-4 py-2 text-sm rounded-lg border transition hover:bg-gray-100"
               >
-                Ver web
+                Ver repositorio
               </a>
+            </div>
 
+          </div>
+
+          {/* EXPENSE TRACKER */}
+          <div className="rounded-xl border bg-white/70 backdrop-blur p-6 shadow-sm transition hover:shadow-md">
+
+            <h2 className="text-xl font-semibold">
+              AI Expense Tracker OCR — Automatización financiera
+            </h2>
+
+            <p className="mt-3 text-sm text-gray-600">
+              Sistema automático de procesamiento de facturas mediante OCR
+              orientado a eliminar tareas manuales de introducción de datos.
+              El backend gestiona la extracción, validación y estructuración
+              de información financiera.
+            </p>
+
+            <ul className="mt-4 text-sm space-y-2">
+              <li>✅ Lectura automática de documentos con OCR</li>
+              <li>✅ API backend para gestión financiera</li>
+              <li>✅ Pipeline de procesamiento de facturas</li>
+              <li>✅ Preparado para integración móvil</li>
+            </ul>
+
+            <p className="mt-4 text-sm">
+              <b>Impacto:</b> reducción de tiempo administrativo y automatización
+              de procesos financieros repetitivos.
+            </p>
+
+            <p className="mt-2 text-sm">
+              <b>Stack:</b> Python, OCR, FastAPI
+            </p>
+
+            <div className="mt-5">
               <a
-                href="https://github.com/Jaume92/catalogo_test"
+                href="https://github.com/Jaume92/ai-expense-tracker-ocr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 text-sm rounded-lg border transition hover:bg-gray-100 active:scale-95 cursor-pointer"
+                className="px-4 py-2 text-sm rounded-lg border transition hover:bg-gray-100"
+              >
+                Ver repositorio
+              </a>
+            </div>
+
+          </div>
+
+          {/* POWER BI */}
+          <div className="rounded-xl border bg-white/70 backdrop-blur p-6 shadow-sm transition hover:shadow-md">
+
+            <h2 className="text-xl font-semibold">
+              Power BI Portfolio — Business & Lean Analytics
+            </h2>
+
+            <p className="mt-3 text-sm text-gray-600">
+              Colección de dashboards ejecutivos diseñados para analizar
+              rendimiento empresarial, operaciones Lean y KPIs estratégicos.
+              El enfoque está orientado a visualización clara, toma de decisiones
+              y análisis operativo en entornos reales.
+            </p>
+
+            <div className="mt-5">
+              <img
+                src={powerbiImages[current]}
+                className="w-full max-h-[420px] object-contain bg-white rounded-lg border"
+                alt="Power BI Dashboard"
+              />
+            </div>
+
+            <div className="flex justify-center gap-2 mt-3">
+              {powerbiImages.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrent(index)}
+                  className={`w-3 h-3 rounded-full transition ${
+                    current === index
+                      ? "bg-orange-500"
+                      : "bg-gray-300 hover:bg-gray-400"
+                  }`}
+                />
+              ))}
+            </div>
+
+            <p className="mt-4 text-sm">
+              <b>Stack:</b> Power BI, DAX, SQL
+            </p>
+
+            <div className="mt-5">
+              <a
+                href="https://github.com/Jaume92/portfolio_Powerbi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 text-sm rounded-lg border transition hover:bg-gray-100"
               >
                 Ver repositorio
               </a>
