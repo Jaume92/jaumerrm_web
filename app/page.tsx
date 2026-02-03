@@ -59,26 +59,26 @@ export default function Home() {
       </header>
 
       {/* HERO */}
-      <section className="max-w-6xl mx-auto px-6 pt-16 pb-24 grid md:grid-cols-2 gap-12 items-center animate-fade-in">
+      <section className="max-w-6xl mx-auto px-6 pt-8 pb-10 md:pt-16 md:pb-24 grid md:grid-cols-2 gap-8 items-center animate-fade-in">
 
         {/* TEXTO */}
         <div>
 
-          <span className="inline-block mb-4 px-3 py-1 text-xs rounded-full bg-orange-100 text-orange-700">
+          <span className="inline-block mb-3 px-3 py-1 text-xs rounded-full bg-orange-100 text-orange-700">
             Ingeniero IA · Automatización · Fullstack
           </span>
 
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight">
             Desarrollo soluciones reales en IA y backend
             <span className="text-orange-500"> con enfoque práctico</span>
           </h1>
 
-          <p className="mt-6 text-lg text-gray-600 max-w-xl">
+          <p className="mt-4 text-base md:text-lg text-gray-600 max-w-xl">
             Backend, web y data aplicada usando Python, automatización y machine learning.
           </p>
 
           {/* STACK BADGES */}
-          <div className="mt-4 flex flex-wrap gap-2 text-sm">
+          <div className="mt-3 flex flex-wrap gap-2 text-xs md:text-sm">
 
             <span className="px-3 py-1 rounded-full bg-white/70 border">Python</span>
             <span className="px-3 py-1 rounded-full bg-white/70 border">FastAPI</span>
@@ -90,33 +90,33 @@ export default function Home() {
 
           </div>
 
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-6 flex flex-wrap gap-3">
 
-            <Link href="/projects" className="px-6 py-3 rounded-lg bg-orange-500 text-white font-medium transition hover:bg-orange-600 hover:scale-[1.03]">
+            <Link href="/projects" className="px-6 py-3 rounded-lg bg-orange-500 text-white font-medium transition hover:bg-orange-600 hover:scale-[1.03] w-full sm:w-auto">
               Ver proyectos reales
             </Link>
 
-            <Link href="/contact" className="px-6 py-3 rounded-lg border font-medium transition hover:bg-orange-100 hover:scale-[1.03]">
+            <Link href="/contact" className="px-6 py-3 rounded-lg border font-medium transition hover:bg-orange-100 hover:scale-[1.03] w-full sm:w-auto">
               Contactar
             </Link>
 
           </div>
 
           {/* METRICAS */}
-          <div className="mt-8 flex flex-wrap gap-8">
+          <div className="mt-6 grid grid-cols-2 gap-6 md:flex md:gap-8">
 
             <div className="text-center transition hover:-translate-y-1">
-              <div className="text-2xl font-bold text-gray-900">5+</div>
+              <div className="text-3xl font-bold text-gray-900">5+</div>
               <div className="text-sm text-gray-600">proyectos reales</div>
             </div>
 
             <div className="text-center transition hover:-translate-y-1">
-              <div className="text-2xl font-bold text-gray-900">3</div>
+              <div className="text-3xl font-bold text-gray-900">3</div>
               <div className="text-sm text-gray-600">sistemas productivos</div>
             </div>
 
-            <div className="text-center transition hover:-translate-y-1">
-              <div className="text-2xl font-bold text-gray-900">100%</div>
+            <div className="text-center col-span-2 md:col-span-1 transition hover:-translate-y-1">
+              <div className="text-3xl font-bold text-gray-900">100%</div>
               <div className="text-sm text-gray-600">código propio</div>
             </div>
 
@@ -135,7 +135,7 @@ export default function Home() {
             <img
               src="/portada.png"
               alt="Jaume profile"
-              className="relative w-64 md:w-80 transition-all duration-500 hover:scale-[1.10] hover:-translate-y-8"
+              className="relative w-44 sm:w-52 md:w-80 -translate-y-2 md:translate-y-0 transition-all duration-500 hover:scale-[1.10] hover:-translate-y-8"
             />
 
           </div>
