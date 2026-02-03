@@ -31,7 +31,8 @@ export default function Home() {
           </button>
 
           {menuOpen && (
-            <div className="absolute right-0 mt-3 w-56 rounded-xl border bg-white/95 backdrop-blur shadow-xl p-3">
+            <div className="absolute right-0 mt-3 w-60 rounded-2xl border bg-white/90 backdrop-blur-xl shadow-2xl p-4">
+
 
               <Link href="/projects" onClick={() => setMenuOpen(false)} className="block px-3 py-2 rounded-lg hover:bg-orange-100">
                 Proyectos
