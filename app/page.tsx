@@ -16,7 +16,9 @@ export default function Home() {
 
 
       {/* HERO */}
-      <section className="relative max-w-7xl mx-auto px-6 pt-4 pb-10 md:pt-10 md:pb-24 grid md:grid-cols-2 gap-8 items-center animate-fade-in">
+      <section className="relative max-w-6xl mx-auto px-6 pt-7 pb-16 md:pt-10 md:pb-24 grid md:grid-cols-2 gap-10 items-center animate-fade-in">
+
+
 
         {/* HAMBURGUESA */}
         <div className="absolute right-6 top-12 md:top-8 z-50">
