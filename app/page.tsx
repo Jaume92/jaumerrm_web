@@ -25,9 +25,10 @@ export default function Home() {
 
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="w-10 h-10 flex items-center justify-center rounded-lg border bg-white/80 backdrop-blur hover:bg-orange-100 transition shadow-sm"
+            className="w-8 h-8 flex items-center justify-center rounded-lg border bg-white/80 backdrop-blur hover:bg-orange-100 transition shadow-sm"
           >
-            ☰
+            <span className="text-lg md:text-xl">☰   
+               </span>
           </button>
 
           {menuOpen && (
@@ -70,8 +71,8 @@ export default function Home() {
             Ingeniero IA · Automatización · Fullstack
           </span>
 
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight">
-            Desarrollo soluciones en IA y backend
+          <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold leading-tight">
+            Desarrollo soluciones IA y backend
             <span className="text-orange-500"> con enfoque práctico</span>
           </h1>
 
