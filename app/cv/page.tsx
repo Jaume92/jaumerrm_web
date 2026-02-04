@@ -291,7 +291,7 @@ export default function CVPage() {
               </Link>
 
               <a
-                href="/Jaume_Ruiz_CV.pdf"
+                href="/Jaume_RuizRuano_AI_Data_Junior.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 rounded-lg border text-sm font-medium hover:bg-gray-100 active:scale-95 transition"

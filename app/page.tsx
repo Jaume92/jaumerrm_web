@@ -81,7 +81,7 @@ export default function Home() {
           </p>
 
           {/* STACK */}
-          <div className="mt-3 flex flex-wrap gap-2 text-xs md:text-sm">
+          <div className="mt-4 flex flex-wrap gap-2 text-xs md:text-sm">
             <span className="px-3 py-1 rounded-full bg-white/70 border">Python</span>
             <span className="px-3 py-1 rounded-full bg-white/70 border">FastAPI</span>
             <span className="px-3 py-1 rounded-full bg-white/70 border">Next.js</span>
