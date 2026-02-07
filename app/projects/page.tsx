@@ -9,9 +9,16 @@ const powerbiImages = [
   "/projects/powerbi_3.png",
 ];
 
+const polleriaImages = [
+  "/projects/Pollos1.png",
+  "/projects/Pollos2.png",
+  "/projects/Pollos3.png",
+];
+
 export default function Projects() {
 
   const [current, setCurrent] = useState(0);
+  const [currentPolleria, setCurrentPolleria] = useState(0);
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-white via-orange-50 to-white text-gray-900 px-6 py-16">
@@ -63,6 +70,29 @@ export default function Projects() {
               <li>✅ Arquitectura local optimizada para bajo consumo de recursos</li>
             </ul>
 
+            {/* IMÁGENES POLLERÍA */}
+            <div className="mt-5">
+              <img
+                src={polleriaImages[currentPolleria]}
+                className="w-full max-h-[420px] object-contain bg-white rounded-lg border"
+                alt="Pollería App"
+              />
+            </div>
+
+            <div className="flex justify-center gap-2 mt-3">
+              {polleriaImages.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentPolleria(index)}
+                  className={`w-3 h-3 rounded-full transition ${
+                    currentPolleria === index
+                      ? "bg-orange-500"
+                      : "bg-gray-300 hover:bg-gray-400"
+                  }`}
+                />
+              ))}
+            </div>
+
             <p className="mt-4 text-sm">
               <b>Impacto:</b> mejora del flujo operativo, reducción de tiempos de pedido
               y disminución de errores humanos en entornos de alta rotación.
@@ -105,6 +135,13 @@ export default function Projects() {
               <li>✅ Detección automática de eventos críticos</li>
               <li>✅ Arquitectura preparada para despliegue local o edge</li>
             </ul>
+                    <div className="mt-5">
+                      <img
+               src="/projects/Humo1.jpg"
+                    className="w-full max-h-[420px] object-contain bg-white rounded-lg border"
+                   alt="Detección de humo y fuego"
+                     />
+                </div>
 
             <p className="mt-4 text-sm">
               <b>Impacto:</b> reducción del tiempo de reacción ante incendios
