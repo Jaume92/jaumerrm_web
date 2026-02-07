@@ -10,7 +10,7 @@ const powerbiImages = [
 ];
 
 const polleriaImages = [
-  "/projects/Pollos1.png",
+  "/projects/pollos1.png",
   "/projects/Pollos2.png",
   "/projects/Pollos3.png",
 ];
