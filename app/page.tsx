@@ -114,7 +114,7 @@ export default function Home() {
           <div className="mt-6 grid grid-cols-2 gap-6 md:flex md:gap-8">
 
             <div className="text-center">
-              <div className="text-3xl font-bold">5+</div>
+              <div className="text-3xl font-bold">6+</div>
               <div className="text-sm text-gray-600">Proyectos </div>
             </div>
 

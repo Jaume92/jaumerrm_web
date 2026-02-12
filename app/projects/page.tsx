@@ -304,10 +304,52 @@ export default function Projects() {
 
           </div>
 
-        </div>
+          {/* EXPENSE TRACKER */}
+          <div className="rounded-xl border bg-white/70 backdrop-blur p-6 shadow-sm transition hover:shadow-md">
 
+            <h2 className="text-xl font-semibold">
+              AI lean Assistant- inteligencia aplicada a mejora continua 
+            </h2>
+
+            <p className="mt-3 text-sm text-gray-600">
+              Asistente basado en IA especializado en metodologías Lean Manufacturing,
+                capaz de responder preguntas técnicas, analizar procesos y proponer
+                mejoras operativas utilizando documentación estructurada y técnicas RAG.
+                  Diseñado para entornos industriales reales.
+            </p>
+
+            <ul className="mt-4 text-sm space-y-2">
+              <li>✅ Chatbot experto en Lean basado en documentación técnica</li>
+              <li>✅ Arquitectura RAG con recuperación de conocimiento industrial</li>
+                <li>✅ API backend preparada para integración en planta o dashboard</li>
+                <li>✅ Escalable a asistentes de mejora continua en tiempo real</li>
+            </ul>
+
+            <p className="mt-4 text-sm">
+            <b>Impacto:</b> aceleración del análisis de procesos, soporte a toma dedecisiones operativas y digitalización del conocimiento Lean en fábrica.
+            </p>
+
+            <p className="mt-2 text-sm">
+              <b>Stack:</b> Python, OCR, FastAPI
+            </p>
+
+            <div className="mt-5">
+              <a
+                href="https://github.com/Jaume92/Lean_RAG"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 text-sm rounded-lg border transition hover:bg-gray-100"
+              >
+                Ver repositorio
+              </a>
+             </div>
+            </div>
+           
+
+
+          </div>
       </div>
-
-    </main>
+  </main>
   );
 }
+
