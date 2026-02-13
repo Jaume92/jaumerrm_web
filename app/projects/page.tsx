@@ -73,18 +73,19 @@ export default function Projects() {
             {/* IMÁGENES POLLERÍA */}
             <div className="mt-5">
               <img
-                src={polleriaImages[currentPolleria]}
-                className="w-full max-h-[420px] object-contain bg-white rounded-lg border"
-                alt="Pollería App"
-              />
+                     src={polleriaImages[currentPolleria]}
+                       className="w-full h-full object-cover"
+                        alt="Pollería App"
+                           />
+
             </div>
 
-            <div className="flex justify-center gap-2 mt-3">
+            <div className="flex justify-center gap-12 mt-3">
               {polleriaImages.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentPolleria(index)}
-                  className={`w-3 h-3 rounded-full transition ${
+                  className={`w-5 h-8 rounded-full transition ${
                     currentPolleria === index
                       ? "bg-orange-500"
                       : "bg-gray-300 hover:bg-gray-400"
@@ -135,10 +136,11 @@ export default function Projects() {
               <li>✅ Detección automática de eventos críticos</li>
               <li>✅ Arquitectura preparada para despliegue local o edge</li>
             </ul>
-                    <div className="mt-5">
+                    <div className="mt-5 w-full h-[640px] overflow-hidden rounded-lg border">
+
                       <img
                src="/projects/Humo1.jpg"
-                    className="w-full max-h-[420px] object-contain bg-white rounded-lg border"
+                    className="w-full h-full object-cover "
                    alt="Detección de humo y fuego"
                      />
                 </div>
@@ -292,17 +294,17 @@ export default function Projects() {
             <div className="mt-5">
               <img
                 src={powerbiImages[current]}
-                className="w-full max-h-[420px] object-contain bg-white rounded-lg border"
+                className="w-full h-full object-cover"
                 alt="Power BI Dashboard"
               />
             </div>
 
-            <div className="flex justify-center gap-2 mt-3">
+            <div className="flex justify-center gap-16 mt-8">
               {powerbiImages.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrent(index)}
-                  className={`w-3 h-3 rounded-full transition ${
+                  className={`w-5 h-8 rounded-full transition ${
                     current === index
                       ? "bg-orange-500"
                       : "bg-gray-300 hover:bg-gray-400"

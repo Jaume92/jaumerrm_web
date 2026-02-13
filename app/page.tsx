@@ -21,18 +21,18 @@ export default function Home() {
 
 
         {/* HAMBURGUESA */}
-        <div className="absolute right-6 top-12 md:top-8 z-50">
+        <div className="absolute left-250 top-16 md:top-18 z-40">
 
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="w-8 h-8 flex items-center justify-center rounded-lg border bg-white/80 backdrop-blur hover:bg-orange-100 transition shadow-sm"
+            className="w-12 h-8 flex items-center justify-center rounded-lg border bg-white/80 backdrop-blur hover:bg-orange-100 transition shadow-sm"
           >
             <span className="text-lg md:text-xl">☰   
                </span>
           </button>
 
           {menuOpen && (
-            <div className="absolute right-0 mt-3 w-60 rounded-2xl border bg-white/90 backdrop-blur-xl shadow-2xl p-4">
+            <div className="absolute left-0 mt-3 w-60 rounded-2xl border bg-white/90 backdrop-blur-xl shadow-2xl p-4">
 
 
               <Link href="/projects" onClick={() => setMenuOpen(false)} className="block px-3 py-2 rounded-lg hover:bg-orange-100">
@@ -65,7 +65,7 @@ export default function Home() {
         </div>
 
         {/* TEXTO */}
-        <div>
+        <div className="md:ml-16">
 
           <span className="inline-block mb-3 px-3 py-1 text-xs rounded-full bg-orange-100 text-orange-700">
             Ingeniero IA · Automatización · Fullstack
@@ -141,7 +141,7 @@ export default function Home() {
             <img
               src="/portada.png"
               alt="Jaume profile"
-              className="relative w-44 sm:w-52 md:w-80 -translate-y-2 md:translate-y-0 transition-all duration-500 hover:scale-[1.06]"
+              className="relative w-60 sm:w-52 md:w-100 -translate-y-2 md:translate-y-0 transition-all duration-500 hover:scale-[1.110]"
             />
 
           </div>
@@ -216,40 +216,86 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PROYECTOS */}
-      <section className="max-w-5xl mx-auto px-6 pb-20">
-        <h2 className="text-2xl font-semibold">Proyectos reales</h2>
+ 
 
-        <div className="mt-8 grid md:grid-cols-2 gap-6">
+{/* PROYECTOS */}
+<section className="max-w-3xl mx-auto px-6 pb-20">
+  <h2 className="text-2xl font-semibold">Proyectos reales</h2>
 
-          <div className="rounded-xl border bg-white/70 backdrop-blur p-5 shadow-sm transition hover:shadow-md hover:-translate-y-1">
-            <h3 className="font-semibold">Pollería App — Sistema de pedidos</h3>
-            <p className="mt-2 text-sm text-gray-600">
-              Plataforma para digitalizar pedidos físicos y automatizar el flujo completo desde mostrador hasta cocina.
-            </p>
+  {/* LEAN AI DESTACADO */}
+  <div className="mt-8 max-w-3xl mx-auto">
+    <h3 className="font-semibold text-center">
+      Lean AI Assistant — IA para mejora continua
+    </h3>
 
-            <div className="mt-4">
-              <Link href="/projects" className="text-sm text-orange-600 font-medium hover:underline">
-                Ver proyecto →
-              </Link>
-            </div>
-          </div>
+    <p className="mt-2 text-sm text-gray-600 text-center">
+      Asistente inteligente basado en IA generativa y RAG para digitalizar el conocimiento Lean
+      y apoyar la toma de decisiones operativas en entornos industriales.
+    </p>
 
-          <div className="rounded-xl border bg-white/70 backdrop-blur p-5 shadow-sm transition hover:shadow-md hover:-translate-y-1">
-            <h3 className="font-semibold">Detector de humo y fuego</h3>
-            <p className="mt-2 text-sm text-gray-600">
-              Sistema de detección temprana de incendios mediante visión artificial usando YOLOv8.
-            </p>
+    {/* VIDEO */}
+    <div className="mt-4 w-full aspect-video rounded-lg overflow-hidden border">
+      <iframe
+        className="w-full h-full"
+        src="https://www.youtube.com/embed/Ki_d4YFjgL4"
+        title="Lean AI Assistant Demo"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
+    </div>
 
-            <div className="mt-4">
-              <Link href="/projects" className="text-sm text-orange-600 font-medium hover:underline">
-                Ver proyecto →
-              </Link>
-            </div>
-          </div>
+    <div className="mt-4 flex justify-center gap-4 flex-wrap">
+      <a
+        href="https://leanrag-fpayub2h46ogjcnn3kquub.streamlit.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-sm text-orange-600 font-medium hover:underline"
+      >
+        Ver demo en vivo →
+      </a>
 
-        </div>
-      </section>
+      <Link
+        href="/projects"
+        className="text-sm text-gray-600 hover:underline"
+      >
+        Ver detalles →
+      </Link>
+    </div>
+  </div>
+
+  {/* GRID PROYECTOS RESTANTES */}
+  <div className="mt-10 grid md:grid-cols-2 gap-6">
+
+    {/* POLLERIA */}
+    <div className="rounded-xl border bg-white/70 backdrop-blur p-5 shadow-sm transition hover:shadow-md hover:-translate-y-1">
+      <h3 className="font-semibold">Pollería App — Sistema de pedidos</h3>
+      <p className="mt-2 text-sm text-gray-600">
+        Plataforma para digitalizar pedidos físicos y automatizar el flujo completo desde mostrador hasta cocina.
+      </p>
+
+      <div className="mt-4">
+        <Link href="/projects" className="text-sm text-orange-600 font-medium hover:underline">
+          Ver proyecto →
+        </Link>
+      </div>
+    </div>
+
+    {/* DETECTOR HUMO */}
+    <div className="rounded-xl border bg-white/70 backdrop-blur p-5 shadow-sm transition hover:shadow-md hover:-translate-y-1">
+      <h3 className="font-semibold">Detector de humo y fuego</h3>
+      <p className="mt-2 text-sm text-gray-600">
+        Sistema de detección temprana de incendios mediante visión artificial usando YOLOv8.
+      </p>
+
+      <div className="mt-4">
+        <Link href="/projects" className="text-sm text-orange-600 font-medium hover:underline">
+          Ver proyecto →
+        </Link>
+      </div>
+    </div>
+
+  </div>
+</section>
 
       {/* FOOTER */}
       <footer className="border-t bg-white/70 backdrop-blur">
