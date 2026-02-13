@@ -21,7 +21,7 @@ export default function Home() {
 
 
         {/* HAMBURGUESA */}
-        <div className="absolute left-250 top-16 md:top-18 z-40">
+        <div className="absolute right-4 top-6 sm:right-6 sm:top-8 md:right-6 md:top-10 z-40">
 
           <button
             onClick={() => setMenuOpen(!menuOpen)}
