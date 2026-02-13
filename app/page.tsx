@@ -80,7 +80,7 @@ export default function Home() {
           </h1>
 
           <p className="mt-4 text-base md:text-lg text-gray-600 max-w-xl">
-            Aprendo creando sistemas inteligentes aplicados a problemas reales.
+            Desarrollo sistemas inteligentes, analítica industrial y automatización orientada a impacto operativo, eficiencia y digitalización de negocio.
           </p>
 
           {/* STACK */}
@@ -162,16 +162,19 @@ export default function Home() {
       {/*Soluciones que desarrollo */}
 <section className="max-w-5xl mx-auto px-6 pb-20">
 
-  {/* TÍTULO CON SEPARADOR */}
-  <div className="flex items-center gap-4 my-16">
-    <div className="flex-1 h-px bg-orange-400"></div>
+  {/* TÍTULO CON SEPARADOR RESPONSIVE */}
+<div className="flex flex-col md:flex-row items-center gap-4 my-16">
 
-    <h2 className="text-3xl font-semibold text-center whitespace-nowrap">
-      Soluciones que desarrollo
-    </h2>
+  <div className="hidden md:block flex-1 h-px bg-orange-300"></div>
 
-    <div className="flex-1 h-px bg-orange-00"></div>
-  </div>
+  <h2 className="text-2xl md:text-3xl font-semibold text-center">
+    Soluciones que desarrollo
+  </h2>
+
+  <div className="hidden md:block flex-1 h-px bg-orange-300"></div>
+
+</div>
+
 
   {/* TARJETAS */}
   <div className="mt-8 grid md:grid-cols-3 gap-5">
