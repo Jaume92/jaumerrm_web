@@ -7,9 +7,12 @@ export default function Home() {
 
   const [menuOpen, setMenuOpen] = useState(false);
 
-  return (
-    <main className="min-h-screen bg-gradient-to-br from-white via-orange-50 to-orange-100 animated-bg text-gray-900">
-      <div className="absolute inset-0 -z-10 bg-gradient-to-tr from-orange-200/30 via-transparent to-orange-300/20 blur-3xl"></div>
+ return (
+  <main className="min-h-screen bg-gradient-to-br from-white via-orange-50 to-orange-100 animated-bg text-gray-900">
+  <div className="absolute inset-0 -z-10 bg-gradient-to-tr from-orange-200/30 via-transparent to-orange-300/20 blur-3xl"></div>
+
+
+
 
       {/* HEADER VACÍO */}
       <header className="max-w-5xl mx-auto px-6 py-1"></header>
@@ -156,39 +159,60 @@ export default function Home() {
         </div>
       </section>
 
-      {/* QUE HAGO */}
+      {/*Soluciones que desarrollo */}
+<section className="max-w-5xl mx-auto px-6 pb-20">
+
+  {/* TÍTULO CON SEPARADOR */}
+  <div className="flex items-center gap-4 my-16">
+    <div className="flex-1 h-px bg-orange-400"></div>
+
+    <h2 className="text-3xl font-semibold text-center whitespace-nowrap">
+      Soluciones que desarrollo
+    </h2>
+
+    <div className="flex-1 h-px bg-orange-00"></div>
+  </div>
+
+  {/* TARJETAS */}
+  <div className="mt-8 grid md:grid-cols-3 gap-5">
+
+    <div className="rounded-xl border bg-white/70 backdrop-blur p-5 shadow-sm transition hover:shadow-md hover:-translate-y-1">
+      <h3 className="font-semibold">IA aplicada</h3>
+      <p className="mt-2 text-sm text-gray-600">
+        Implemento visión artificial, RAG y asistentes inteligentes para automatizar tareas repetitivas y aportar valor.
+                  </p>
+                   </div>
+
+                  <div className="rounded-xl border bg-white/70 backdrop-blur p-5 shadow-sm transition hover:shadow-md hover:-translate-y-1">
+                      <h3 className="font-semibold">Automatización</h3>
+                  <p className="mt-2 text-sm text-gray-600">
+        Desarrollo workflows con n8n y APIs para eliminar procesos repetitivos y mejorar eficiencia operativa.
+                  </p>
+                     </div>
+
+                           <div className="rounded-xl border bg-white/70 backdrop-blur p-5 shadow-sm transition hover:shadow-md hover:-translate-y-1">
+                     <h3 className="font-semibold">Sistemas locales</h3>
+                     <p className="mt-2 text-sm text-gray-600">
+                        Despliego soluciones productivas en Ubuntu y mini PCs evitando dependencia innecesaria de la nube.
+                       </p>
+                        </div>
+
+               </div>
+           </section>
+
+
+      {/* Cómo aporto valor */}
       <section className="max-w-5xl mx-auto px-6 pb-20">
-        <h2 className="text-2xl font-semibold">Qué hago??</h2>
+        <div className="flex items-center gap-4 my-12">
+               <div className="flex-1 h-px bg-orange-400"></div>
 
-        <div className="mt-8 grid md:grid-cols-3 gap-5">
+                <h2 className="text-3xl font-semibold text-center whitespace-nowrap">
+                 ¿ Cómo aporto valor?
+             </h2>
 
-          <div className="rounded-xl border bg-white/70 backdrop-blur p-5 shadow-sm transition hover:shadow-md hover:-translate-y-1">
-            <h3 className="font-semibold">IA aplicada</h3>
-            <p className="mt-2 text-sm text-gray-600">
-              Implemento visión artificial, RAG y asistentes inteligentes para automatizar tareas repetiitvas y aportar valor .
-            </p>
-          </div>
+               <div className="flex-1 h-px bg-orange-400"></div>
+                 </div>
 
-          <div className="rounded-xl border bg-white/70 backdrop-blur p-5 shadow-sm transition hover:shadow-md hover:-translate-y-1">
-            <h3 className="font-semibold">Automatización</h3>
-            <p className="mt-2 text-sm text-gray-600">
-              Desarrollo workflows con n8n y APIs para eliminar procesos repetitivos y mejorar eficiencia operativa.
-            </p>
-          </div>
-
-          <div className="rounded-xl border bg-white/70 backdrop-blur p-5 shadow-sm transition hover:shadow-md hover:-translate-y-1">
-            <h3 className="font-semibold">Sistemas locales</h3>
-            <p className="mt-2 text-sm text-gray-600">
-              Despliego soluciones productivas en Ubuntu y mini PCs evitando asi dependencia innecesaria de cloud.
-            </p>
-          </div>
-
-        </div>
-      </section>
-
-      {/* COMO TRABAJO */}
-      <section className="max-w-5xl mx-auto px-6 pb-20">
-        <h2 className="text-2xl font-semibold">Cómo trabajo</h2>
 
         <div className="mt-6 grid md:grid-cols-3 gap-5">
 
@@ -219,8 +243,16 @@ export default function Home() {
  
 
 {/* PROYECTOS */}
-<section className="max-w-3xl mx-auto px-6 pb-20">
-  <h2 className="text-2xl font-semibold">Proyectos reales</h2>
+<section className="max-w-5xl mx-auto px-12 pb-20">
+  <div className="flex items-center gap-4 my-10">
+  <div className="flex-1 h-px bg-gray-400"></div>
+
+  <h2 className="text-3xl font-semibold text-center whitespace-nowrap">
+    Proyectos
+  </h2>
+
+  <div className="flex-1 h-px bg-gray-400"></div>
+</div>
 
   {/* LEAN AI DESTACADO */}
   <div className="mt-8 max-w-3xl mx-auto">
