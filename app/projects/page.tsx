@@ -165,48 +165,72 @@ export default function Projects() {
 
           </div>
 
-          {/* SMART FACTORY */}
-          <div className="rounded-xl border bg-white/70 backdrop-blur p-6 shadow-sm transition hover:shadow-md">
+{/* SMART FACTORY */}
+<div className="rounded-xl border bg-white/70 backdrop-blur p-6 shadow-sm transition hover:shadow-md">
 
-            <h2 className="text-xl font-semibold">
-              Smart Factory Control Tower — Lean Analytics
-            </h2>
+  <h2 className="text-xl font-semibold">
+    Smart Factory Control Tower — Lean Analytics
+  </h2>
 
-            <p className="mt-3 text-sm text-gray-600">
-              Plataforma de simulación industrial y monitorización de KPIs Lean
-              orientada a visualizar rendimiento productivo en tiempo real.
-              El proyecto reproduce escenarios reales de planta para análisis
-              de eficiencia, cuellos de botella y toma de decisiones operativas.
-            </p>
+  <p className="mt-3 text-sm text-gray-600">
+    Plataforma de simulación industrial y monitorización de KPIs Lean
+    orientada a visualizar rendimiento productivo en tiempo real.
+    El proyecto reproduce escenarios reales de planta para análisis
+    de eficiencia, cuellos de botella y toma de decisiones operativas.
+  </p>
 
-            <ul className="mt-4 text-sm space-y-2">
-              <li>✅ Simulación de producción industrial</li>
-              <li>✅ KPIs Lean: OEE, rendimiento y disponibilidad</li>
-              <li>✅ Dashboard web interactivo</li>
-              <li>✅ Arquitectura orientada a datos en tiempo real</li>
-            </ul>
+  <ul className="mt-4 text-sm space-y-2">
+    <li>✅ Simulación de producción industrial</li>
+    <li>✅ KPIs Lean: OEE, rendimiento y disponibilidad</li>
+    <li>✅ Dashboard web interactivo</li>
+    <li>✅ Arquitectura orientada a datos en tiempo real</li>
+  </ul>
 
-            <p className="mt-4 text-sm">
-              <b>Impacto:</b> mejora de visibilidad operativa y soporte a decisiones
-              basadas en datos para entornos industriales.
-            </p>
+  {/* VIDEO SMART FACTORY */}
+  <div className="mt-5 w-full aspect-video rounded-lg overflow-hidden border">
+    <iframe
+      className="w-full h-full"
+      src="https://www.youtube.com/embed/V969vFWjLTs"
+      title="Smart Factory Control Tower Demo"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    />
+  </div>
 
-            <p className="mt-2 text-sm">
-              <b>Stack:</b> Python, JavaScript, HTML
-            </p>
+  <p className="mt-4 text-sm">
+    <b>Impacto:</b> mejora de visibilidad operativa y soporte a decisiones
+    basadas en datos para entornos industriales.
+  </p>
 
-            <div className="mt-5">
-              <a
-                href="https://github.com/Jaume92/Smart-Factory-Control-Tower"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 text-sm rounded-lg border transition hover:bg-gray-100"
-              >
-                Ver repositorio
-              </a>
-            </div>
+  <p className="mt-2 text-sm">
+    <b>Stack:</b> Python, JavaScript, HTML
+  </p>
 
-          </div>
+  <div className="mt-5 flex gap-3 flex-wrap">
+    <a
+      href="https://github.com/Jaume92/Smart-Factory-Control-Tower"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="px-4 py-2 text-sm rounded-lg border transition hover:bg-gray-100"
+    >
+      Ver repositorio
+    </a>
+
+    {/* OPCIONAL: DEMO EN VIVO */}
+    {/* 
+    <a
+      href="URL_DEMO_SMART_FACTORY"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="px-4 py-2 text-sm rounded-lg bg-orange-500 text-white transition hover:bg-orange-600"
+    >
+      Ver demo en vivo
+    </a>
+    */}
+  </div>
+
+</div>
+
 
           {/* EXPENSE TRACKER */}
           <div className="rounded-xl border bg-white/70 backdrop-blur p-6 shadow-sm transition hover:shadow-md">
@@ -304,52 +328,68 @@ export default function Projects() {
 
           </div>
 
-          {/* EXPENSE TRACKER */}
-          <div className="rounded-xl border bg-white/70 backdrop-blur p-6 shadow-sm transition hover:shadow-md">
+{/* LEAN AI */}
+<div className="rounded-xl border bg-white/70 backdrop-blur p-6 shadow-sm transition hover:shadow-md">
+  <h2 className="text-xl font-semibold">
+    AI Lean Assistant — Inteligencia aplicada a mejora continua
+  </h2>
 
-            <h2 className="text-xl font-semibold">
-              AI lean Assistant- inteligencia aplicada a mejora continua 
-            </h2>
+  <p className="mt-3 text-sm text-gray-600">
+    Asistente inteligente orientado a digitalizar el conocimiento Lean y acelerar el análisis de procesos en planta, permitiendo consultas
+    técnicas inmediatas y apoyo a la toma de decisiones operativas.
+    Su objetivo es reducir tiempos de búsqueda de información,
+    mejorar la eficiencia en mejora continua y facilitar la transformación digital en entornos industriales.
+  </p>
 
-            <p className="mt-3 text-sm text-gray-600">
-              Asistente basado en IA especializado en metodologías Lean Manufacturing,
-                capaz de responder preguntas técnicas, analizar procesos y proponer
-                mejoras operativas utilizando documentación estructurada y técnicas RAG.
-                  Diseñado para entornos industriales reales.
-            </p>
+  <ul className="mt-4 text-sm space-y-2">
+    <li>✅ Chatbot experto en Lean Manufacturing</li>
+    <li>✅ Arquitectura RAG</li>
+    <li>✅ API FastAPI</li>
+    <li>✅ OPENAI API</li>
+  </ul>
 
-            <ul className="mt-4 text-sm space-y-2">
-              <li>✅ Chatbot experto en Lean basado en documentación técnica</li>
-              <li>✅ Arquitectura RAG con recuperación de conocimiento industrial</li>
-                <li>✅ API backend preparada para integración en planta o dashboard</li>
-                <li>✅ Escalable a asistentes de mejora continua en tiempo real</li>
-            </ul>
+  {/* VIDEO */}
+  <div className="mt-5 w-full aspect-video rounded-lg overflow-hidden border">
+    <iframe
+      className="w-full h-full"
+      src="https://www.youtube.com/embed/Ki_d4YFjgL4"
+      title="Lean AI Assistant Demo"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    />
+  </div>
 
-            <p className="mt-4 text-sm">
-            <b>Impacto:</b> aceleración del análisis de procesos, soporte a toma dedecisiones operativas y digitalización del conocimiento Lean en fábrica.
-            </p>
+  <p className="mt-4 text-sm">
+    <b>Impacto:</b> digitalización del conocimiento Lean, reducción del tiempo de análisis de procesos y soporte a la toma de decisiones operativas en entornos industriales.
+  </p>
 
-            <p className="mt-2 text-sm">
-              <b>Stack:</b> Python, OCR, FastAPI
-            </p>
+  <p className="mt-2 text-sm">
+    <b>Stack:</b> Python, FastAPI, RAG, OpenAI API, Streamlit
+  </p>
 
-            <div className="mt-5">
-              <a
-                href="https://github.com/Jaume92/Lean_RAG"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 text-sm rounded-lg border transition hover:bg-gray-100"
-              >
-                Ver repositorio
-              </a>
-             </div>
-            </div>
-           
+  <div className="mt-5 flex gap-3 flex-wrap">
+    <a
+      href="https://github.com/Jaume92/Lean_RAG"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="px-4 py-2 text-sm rounded-lg border transition hover:bg-gray-100"
+    >
+      Ver repositorio
+    </a>
 
+    <a
+      href="https://leanrag-fpayub2h46ogjcnn3kquub.streamlit.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="px-4 py-2 text-sm rounded-lg bg-orange-500 text-white transition hover:bg-orange-600"
+    >
+      Ver demo en vivo
+    </a>
+  </div>
+</div>
 
-          </div>
-      </div>
-  </main>
+        </div> {/* space-y-8 */}
+      </div>   {/* max-w-5xl */}
+    </main>
   );
 }
-
