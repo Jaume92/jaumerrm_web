@@ -101,7 +101,7 @@ export default function Home() {
               href="/projects"
               className="px-6 py-3 rounded-lg bg-orange-500 text-white font-medium transition hover:bg-orange-600 hover:scale-[1.03] w-full sm:w-auto"
             >
-              Ver proyectos !
+              Ver proyectos Tecnicos!
             </Link>
 
             <Link

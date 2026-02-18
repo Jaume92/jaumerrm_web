@@ -48,62 +48,67 @@ export default function Projects() {
         <div className="space-y-8">
 
           {/* 1️⃣ LEAN AI */}
-          <div className="rounded-xl border bg-white/70 backdrop-blur p-6 shadow-sm transition hover:shadow-md">
-            <h2 className="text-xl font-semibold">
-              AI Lean Assistant — Inteligencia aplicada a mejora continua
-            </h2>
+<div className="rounded-xl border bg-white/70 backdrop-blur p-6 shadow-sm transition hover:shadow-md">
+  <h2 className="text-xl font-semibold">
+    AI Lean Assistant — Arquitectura RAG aplicada a conocimiento empresarial
+  </h2>
 
-            <p className="mt-3 text-sm text-gray-600">
-              Asistente inteligente orientado a digitalizar el conocimiento Lean y acelerar el análisis de procesos en planta, permitiendo consultas
-              técnicas inmediatas y apoyo a la toma de decisiones operativas.
-              Su objetivo es reducir tiempos de búsqueda de información,
-              mejorar la eficiencia en mejora continua y facilitar la transformación digital en entornos industriales.
-            </p>
+  <p className="mt-3 text-sm text-gray-600">
+    Asistente inteligente basado en arquitectura RAG diseñado para transformar
+    conocimiento operativo en respuestas accionables en tiempo real.
+    El sistema permite a organizaciones consultar procesos, métricas y
+    documentación técnica mediante lenguaje natural, reduciendo la dependencia
+    de información dispersa y acelerando la toma de decisiones.
+  </p>
 
-            <ul className="mt-4 text-sm space-y-2">
-              <li>✅ Chatbot experto en Lean Manufacturing</li>
-              <li>✅ Arquitectura RAG</li>
-              <li>✅ API FastAPI</li>
-              <li>✅ OPENAI API</li>
-            </ul>
+  <ul className="mt-4 text-sm space-y-2">
+    <li>✅ Implementación de arquitectura RAG con recuperación semántica</li>
+    <li>✅ API backend desarrollada con FastAPI</li>
+    <li>✅ Integración con modelos LLM para generación contextual</li>
+    <li>✅ Interfaz interactiva orientada a uso empresarial</li>
+  </ul>
 
-            <div className="mt-5 w-full aspect-video rounded-lg overflow-hidden border">
-              <iframe
-                className="w-full h-full"
-                src="https://www.youtube.com/embed/Ki_d4YFjgL4"
-                title="Lean AI Assistant Demo"
-                allowFullScreen
-              />
-            </div>
+  <div className="mt-5 w-full aspect-video rounded-lg overflow-hidden border">
+    <iframe
+      className="w-full h-full"
+      src="https://www.youtube.com/embed/Ki_d4YFjgL4"
+      title="Lean AI Assistant Demo"
+      allowFullScreen
+    />
+  </div>
 
-            <p className="mt-4 text-sm">
-              <b>Impacto:</b> digitalización del conocimiento Lean, reducción del tiempo de análisis de procesos y soporte a la toma de decisiones operativas en entornos industriales.
-            </p>
+  <p className="mt-4 text-sm">
+    <b>Impacto:</b> reducción del tiempo de acceso a conocimiento crítico,
+    mejora en la consistencia de decisiones operativas y base tecnológica
+    reutilizable para asistentes empresariales basados en IA.
+  </p>
 
-            <p className="mt-2 text-sm">
-              <b>Stack:</b> Python, FastAPI, RAG, OpenAI API, Streamlit
-            </p>
+  <p className="mt-2 text-sm">
+    <b>Stack:</b> Python, FastAPI, RAG, LLM API, recuperación semántica,
+    arquitectura backend orientada a producción
+  </p>
 
-            <div className="mt-5 flex gap-3 flex-wrap">
-              <a
-                href="https://github.com/Jaume92/Lean_RAG"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 text-sm rounded-lg border transition hover:bg-gray-100"
-              >
-                Ver repositorio
-              </a>
+  <div className="mt-5 flex gap-3 flex-wrap">
+    <a
+      href="https://github.com/Jaume92/Lean_RAG"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="px-4 py-2 text-sm rounded-lg border transition hover:bg-gray-100"
+    >
+      Ver repositorio
+    </a>
 
-              <a
-                href="https://leanrag-fpayub2h46ogjcnn3kquub.streamlit.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 text-sm rounded-lg bg-orange-500 text-white transition hover:bg-orange-600"
-              >
-                Ver demo en vivo
-              </a>
-            </div>
-          </div>
+    <a
+      href="https://leanrag-fpayub2h46ogjcnn3kquub.streamlit.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="px-4 py-2 text-sm rounded-lg bg-orange-500 text-white transition hover:bg-orange-600"
+    >
+      Ver demo en vivo
+    </a>
+  </div>
+</div>
+
 
           {/* 2️⃣ DETECTOR HUMO */}
           <div className="rounded-xl border bg-white/70 backdrop-blur p-6 shadow-sm transition hover:shadow-md">
