@@ -80,7 +80,7 @@ export default function Home() {
           </h1>
 
           <p className="mt-4 text-base md:text-lg text-gray-600 max-w-xl">
-            Desarrollo sistemas inteligentes, analítica industrial y automatización orientada a impacto operativo, eficiencia y digitalización de negocio.
+            Ingeniero de Inteligencia Artificial especializado en sistemas productivos, visión artificial y soluciones backend listas para producción
           </p>
 
           {/* STACK */}
