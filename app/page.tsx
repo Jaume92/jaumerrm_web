@@ -102,8 +102,8 @@ export default function Home() {
   }}
 >
   {[
-    "Python",
-    "FastAPI",
+    "Python(backend & IA)",
+    "FastAPI(Apis productivas)",
     "Computer Vision",
     "Machine Learning",
     "Power BI",
@@ -170,24 +170,26 @@ export default function Home() {
           </div>
 
         </div>
+         
+ {/* IMAGEN */}
+<Reveal delay={0.2}>
+  <div className="flex justify-center">
+    <div className="relative">
 
-        {/* IMAGEN */}
-        <div className="flex justify-center">
-          <div className="relative">
+      <div className="absolute inset-0 bg-orange-300/20 blur-3xl rounded-full"></div>
 
-            <div className="absolute inset-0 bg-orange-300/20 blur-3xl rounded-full"></div>
+      <img
+        src="/portada.png"
+        alt="Jaume profile"
+        className="relative w-60 sm:w-52 md:w-100 -translate-y-2 md:translate-y-0 transition-all duration-500 hover:scale-[1.110]"
+      />
 
-            <img
-              src="/portada.png"
-              alt="Jaume profile"
-              className="relative w-60 sm:w-52 md:w-100 -translate-y-2 md:translate-y-0 transition-all duration-500 hover:scale-[1.110]"
-            />
-
-          </div>
-        </div>
+    </div>
+  </div>
+</Reveal>
 
       </section>
-
+   
       {/* DIFERENCIADOR */}
       <section className="max-w-5xl mx-auto px-6 pb-16">
         <div className="p-4 rounded-xl bg-orange-100 text-orange-800 text-sm">
