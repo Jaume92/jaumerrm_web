@@ -1,5 +1,7 @@
 "use client";
 
+import Reveal from "@/components/Reveal";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -39,7 +41,7 @@ export default function Home() {
 
 
               <Link href="/projects" onClick={() => setMenuOpen(false)} className="block px-3 py-2 rounded-lg hover:bg-orange-100">
-                Proyectos
+                Proyectos tecnicos 
               </Link>
 
               <Link href="/cv" onClick={() => setMenuOpen(false)} className="block px-3 py-2 rounded-lg hover:bg-orange-100">
@@ -75,24 +77,58 @@ export default function Home() {
           </span>
 
           <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold leading-tight">
-            Desarrollo soluciones IA y backend
-            <span className="text-orange-500"> con enfoque práctico</span>
+            Soluciones de Inteligencia Artificial para negocio y automatización.
+            <span className="text-orange-500"> </span>
           </h1>
 
           <p className="mt-4 text-base md:text-lg text-gray-600 max-w-xl">
-            Ingeniero de Inteligencia Artificial especializado en sistemas productivos, visión artificial y soluciones backend listas para producción
+            
           </p>
+           Ingeniero de IA enfocado en automatización, sistemas productivos e IA aplicada a negocio.
 
           {/* STACK */}
-          <div className="mt-4 flex flex-wrap gap-2 text-xs md:text-sm">
-            <span className="px-3 py-1 rounded-full bg-white/70 border">Python</span>
-            <span className="px-3 py-1 rounded-full bg-white/70 border">FastAPI</span>
-            <span className="px-3 py-1 rounded-full bg-white/70 border">Next.js</span>
-            <span className="px-3 py-1 rounded-full bg-white/70 border">Machine Learning</span>
-            <span className="px-3 py-1 rounded-full bg-white/70 border">Power BI</span>
-            <span className="px-3 py-1 rounded-full bg-white/70 border">Excel</span>
-            
-          </div>
+<motion.div
+  className="mt-4 flex flex-wrap gap-2 text-xs md:text-sm"
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: true, amount: 0.10 }}
+  variants={{
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: 1,
+      },
+    },
+  }}
+>
+  {[
+    "Python",
+    "FastAPI",
+    "Computer Vision",
+    "Machine Learning",
+    "Power BI",
+    "Next.js",
+  ].map((tech) => (
+    <motion.span
+      key={tech}
+      className="px-3 py-1 rounded-full bg-white/70 border"
+      variants={{
+        hidden: { opacity: 0, y: 10 },
+        show: {
+          opacity: 1,
+          y: 0,
+          x: [0, -2, 2, -2, 2, 0], // 👈 micro-zumbido
+        },
+      }}
+      transition={{
+        duration: 0.6,
+        ease: "easeInOut",
+      }}
+    >
+      {tech}
+    </motion.span>
+  ))}
+</motion.div>
 
           {/* BOTONES */}
           <div className="mt-6 flex flex-wrap gap-3">
@@ -158,7 +194,7 @@ export default function Home() {
           Construyendo experiencia poco a poco en IA aplicada y automatización a través de proyectos reales.
         </div>
       </section>
-
+<Reveal delay={0.2}>
       {/*Soluciones que desarrollo */}
 <section className="max-w-5xl mx-auto px-6 pb-20">
 
@@ -177,6 +213,7 @@ export default function Home() {
 
 
   {/* TARJETAS */}
+  
   <div className="mt-8 grid md:grid-cols-3 gap-5">
 
     <div className="rounded-xl border bg-white/70 backdrop-blur p-5 shadow-sm transition hover:shadow-md hover:-translate-y-1">
@@ -189,7 +226,7 @@ export default function Home() {
                   <div className="rounded-xl border bg-white/70 backdrop-blur p-5 shadow-sm transition hover:shadow-md hover:-translate-y-1">
                       <h3 className="font-semibold">Automatización</h3>
                   <p className="mt-2 text-sm text-gray-600">
-        Desarrollo workflows con n8n y APIs para eliminar procesos repetitivos y mejorar eficiencia operativa.
+        Desarrollo workflows con APIs para eliminar procesos repetitivos y mejorar eficiencia operativa.
                   </p>
                      </div>
 
@@ -203,8 +240,11 @@ export default function Home() {
                </div>
            </section>
 
+           </Reveal>
+
 
       {/* Cómo aporto valor */}
+      <Reveal delay={0.4}>
       <section className="max-w-5xl mx-auto px-6 pb-20">
         <div className="flex items-center gap-4 my-12">
                <div className="flex-1 h-px bg-orange-400"></div>
@@ -242,22 +282,27 @@ export default function Home() {
 
         </div>
       </section>
+    
+      </Reveal>
 
  
 
 {/* PROYECTOS */}
+<Reveal delay={0.20}>
 <section className="max-w-5xl mx-auto px-12 pb-20">
+
+  {/* TÍTULO */}
   <div className="flex items-center gap-4 my-10">
-  <div className="flex-1 h-px bg-gray-400"></div>
+    <div className="flex-1 h-px bg-gray-400"></div>
 
-  <h2 className="text-3xl font-semibold text-center whitespace-nowrap">
-    Proyectos
-  </h2>
+    <h2 className="text-3xl font-semibold text-center whitespace-nowrap">
+      Proyectos
+    </h2>
 
-  <div className="flex-1 h-px bg-gray-400"></div>
-</div>
+    <div className="flex-1 h-px bg-gray-400"></div>
+  </div>
 
-  {/* LEAN AI DESTACADO */}
+  {/* PROYECTO DESTACADO */}
   <div className="mt-8 max-w-3xl mx-auto">
     <h3 className="font-semibold text-center">
       Lean AI Assistant — IA para mejora continua
@@ -274,7 +319,6 @@ export default function Home() {
         className="w-full h-full"
         src="https://www.youtube.com/embed/Ki_d4YFjgL4"
         title="Lean AI Assistant Demo"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       />
     </div>
@@ -299,58 +343,74 @@ export default function Home() {
   </div>
 
   {/* GRID PROYECTOS RESTANTES */}
-  <div className="mt-10 grid md:grid-cols-2 gap-6">
+    <div className="mt-10 grid md:grid-cols-2 gap-6">
 
-    {/* POLLERIA */}
-    <div className="rounded-xl border bg-white/70 backdrop-blur p-5 shadow-sm transition hover:shadow-md hover:-translate-y-1">
-      <h3 className="font-semibold">Pollería App — Sistema de pedidos</h3>
-      <p className="mt-2 text-sm text-gray-600">
-        Plataforma para digitalizar pedidos físicos y automatizar el flujo completo desde mostrador hasta cocina.
-      </p>
+      {/* POLLERIA */}
+      <Reveal delay={0.15}>
+        <div className="rounded-xl border bg-white/70 backdrop-blur p-5 shadow-sm transition hover:shadow-md hover:-translate-y-1">
+          <h3 className="font-semibold">Pollería App — Sistema de pedidos</h3>
+          <p className="mt-2 text-sm text-gray-600">
+            Plataforma para digitalizar pedidos físicos y automatizar el flujo completo desde mostrador hasta cocina.
+          </p>
 
-      <div className="mt-4">
-        <Link href="/projects" className="text-sm text-orange-600 font-medium hover:underline">
-          Ver proyecto →
-        </Link>
-      </div>
+          <div className="mt-4">
+            <Link href="/projects" className="text-sm text-orange-600 font-medium hover:underline">
+              Ver proyecto →
+            </Link>
+          </div>
+        </div>
+      </Reveal>
+
+      {/* DETECTOR HUMO */}
+      <Reveal delay={0.17}>
+        <div className="rounded-xl border bg-white/70 backdrop-blur p-5 shadow-sm transition hover:shadow-md hover:-translate-y-1">
+          <h3 className="font-semibold">Detector de humo y fuego</h3>
+          <p className="mt-2 text-sm text-gray-600">
+            Sistema de detección temprana de incendios mediante visión artificial usando YOLOv8.
+          </p>
+
+          <div className="mt-4">
+            <Link href="/projects" className="text-sm text-orange-600 font-medium hover:underline">
+              Ver proyecto →
+            </Link>
+          </div>
+        </div>
+      </Reveal>
+
     </div>
 
-    {/* DETECTOR HUMO */}
-    <div className="rounded-xl border bg-white/70 backdrop-blur p-5 shadow-sm transition hover:shadow-md hover:-translate-y-1">
-      <h3 className="font-semibold">Detector de humo y fuego</h3>
-      <p className="mt-2 text-sm text-gray-600">
-        Sistema de detección temprana de incendios mediante visión artificial usando YOLOv8.
-      </p>
+  </section>
+</Reveal>
 
-      <div className="mt-4">
-        <Link href="/projects" className="text-sm text-orange-600 font-medium hover:underline">
-          Ver proyecto →
-        </Link>
-      </div>
+{/* FOOTER */}
+<footer className="border-t bg-white/70 backdrop-blur">
+  <div className="max-w-5xl mx-auto px-6 py-8 text-sm text-gray-500 flex flex-col md:flex-row justify-between gap-3">
+
+    <span>© {new Date().getFullYear()} Jaume Ruiz — Portfolio técnico</span>
+
+    <div className="flex gap-4">
+      <a
+        href="https://github.com/Jaume92"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-orange-600 transition"
+      >
+        GitHub
+      </a>
+
+      <a
+        href="https://www.linkedin.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-orange-600 transition"
+      >
+        LinkedIn
+      </a>
     </div>
 
   </div>
-</section>
+</footer>
 
-      {/* FOOTER */}
-      <footer className="border-t bg-white/70 backdrop-blur">
-        <div className="max-w-5xl mx-auto px-6 py-8 text-sm text-gray-500 flex flex-col md:flex-row justify-between gap-3">
-
-          <span>© {new Date().getFullYear()} Jaume Ruiz — Portfolio técnico</span>
-
-          <div className="flex gap-4">
-            <a href="https://github.com/Jaume92" target="_blank" className="hover:text-orange-600 transition">
-              GitHub
-            </a>
-
-            <a href="https://www.linkedin.com" target="_blank" className="hover:text-orange-600 transition">
-              LinkedIn
-            </a>
-          </div>
-
-        </div>
-      </footer>
-
-    </main>
+</main>
   );
 }
