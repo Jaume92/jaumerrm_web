@@ -3,29 +3,26 @@ import Link from "next/link";
 export default function DamPage() {
   const asignaturas = [
     {
-      nombre: "Bases de Datos A",
+      nombre: "Bases de Datos B",
       descripcion: "Modelo entidad-relación, normalización, SQL, Oracle, etc.",
     },
     {
-      nombre: "Programación A",
+      nombre: "Programación B",
       descripcion: "Algoritmos, Java, estructuras de control, clases, POO.",
     },
     {
-      nombre: "Sistemas Informáticos",
-      descripcion: "Linux, hardware, redes, comandos, tipos de memoria.",
+      nombre: "Entornos de desarollo",
+      descripcion: "",
     },
     {
-      nombre: "Digitalización",
+      nombre: "Ingles professional",
       descripcion: "Transformación digital, herramientas TIC, automatización.",
     },
     {
-      nombre: "Sostenibilidad",
+      nombre: "Lenguaje de marcas y sistemas de gestion de la informacion",
       descripcion: "Eficiencia energética, ciclo de vida, triple balance.",
     },
-    {
-      nombre: "ITI I",
-      descripcion: "Empleabilidad, soft skills, marca personal y orientación.",
-    },
+   
   ];
 
   return (
@@ -89,7 +86,7 @@ export default function DamPage() {
                   </span>
 
                   <span className="text-sm text-orange-600 font-medium">
-                    Próximamente →
+                    Próximamente → Pronto se vendran resumenes
                   </span>
 
                 </div>
