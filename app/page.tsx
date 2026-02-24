@@ -9,7 +9,46 @@ export default function Home() {
 
   const [menuOpen, setMenuOpen] = useState(false);
 
- return (
+  
+  const stack = [
+    {
+      name: "Python",
+      description: "Backend & IA",
+      icon: "/icons/python.svg",
+    },
+    {
+      name: "FastAPI",
+      description: "APIs productivas",
+      icon: "/icons/fastapi.svg",
+    },
+    {
+      name: "Computer Vision",
+      icon: "/icons/opencv.svg",
+    },
+    {
+      name: "Machine Learning",
+      icon: "/icons/pytorch.svg",
+    },
+    {
+      name: "Power BI",
+      icon: "/icons/powerbi.svg",
+    },
+    {
+      name: "Next.js",
+      icon: "/icons/nextjs.svg",
+    
+    },
+     
+    {
+      name: "Docker.js",
+      icon: "/icons/Docker.svg",
+    },
+  ];
+
+  
+  return (
+
+ 
   <main className="min-h-screen bg-gradient-to-br from-white via-orange-50 to-orange-100 animated-bg text-gray-900">
   <div className="absolute inset-0 -z-10 bg-gradient-to-tr from-orange-200/30 via-transparent to-orange-300/20 blur-3xl"></div>
 
@@ -96,28 +135,21 @@ export default function Home() {
     hidden: {},
     show: {
       transition: {
-        staggerChildren: 1,
+        staggerChildren: 0.15,
       },
     },
   }}
 >
-  {[
-    "Python(backend & IA)",
-    "FastAPI(Apis productivas)",
-    "Computer Vision",
-    "Machine Learning",
-    "Power BI",
-    "Next.js",
-  ].map((tech) => (
-    <motion.span
-      key={tech}
-      className="px-3 py-1 rounded-full bg-white/70 border"
+  {stack.map((tech) => (
+    <motion.div
+      key={tech.name}
+      className="flex items-center gap-2 px-3 py-1 rounded-full bg-white/70 border"
       variants={{
         hidden: { opacity: 0, y: 10 },
         show: {
           opacity: 1,
           y: 0,
-          x: [0, -2, 2, -2, 2, 0], // 👈 micro-zumbido
+          x: [0, -2, 2, -2, 2, 0],
         },
       }}
       transition={{
@@ -125,8 +157,21 @@ export default function Home() {
         ease: "easeInOut",
       }}
     >
-      {tech}
-    </motion.span>
+      <img
+        src={tech.icon}
+        alt={tech.name}
+        className="w-4 h-4"
+      />
+
+      <span className="font-medium">
+        {tech.name}
+        {tech.description && (
+          <span className="text-gray-500 ml-1">
+            ({tech.description})
+          </span>
+        )}
+      </span>
+    </motion.div>
   ))}
 </motion.div>
 
