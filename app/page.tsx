@@ -42,6 +42,10 @@ export default function Home() {
       name: "Docker",
       icon: "/icons/docker.svg",
     },
+    {
+      name: "GIT",
+      icon: "/icons/git.svg",
+    },
   ];
 
   
