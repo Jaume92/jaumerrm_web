@@ -39,7 +39,7 @@ export default function Home() {
     
     },
      {
-      name: "Docker.js",
+      name: "Docker",
       icon: "/icons/docker.svg",
     },
   ];
