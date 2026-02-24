@@ -38,10 +38,9 @@ export default function Home() {
       icon: "/icons/nextjs.svg",
     
     },
-     
-    {
+     {
       name: "Docker.js",
-      icon: "/icons/Docker.svg",
+      icon: "/icons/docker.svg",
     },
   ];
 
