@@ -436,7 +436,7 @@ export default function Home() {
 <footer className="border-t bg-white/70 backdrop-blur">
   <div className="max-w-5xl mx-auto px-6 py-8 text-sm text-gray-500 flex flex-col md:flex-row justify-between gap-3">
 
-    <span>© {new Date().getFullYear()} Jaume Ruiz</span>
+    <span>© {new Date().getFullYear()} Jaume Ruiz — Portfolio técnico</span>
 
     <div className="flex gap-4">
       <a
