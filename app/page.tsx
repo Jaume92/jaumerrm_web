@@ -335,7 +335,7 @@ export default function Home() {
 
 {/* PROYECTOS */}
 <Reveal delay={0.20}>
-<section className="max-w-5xl mx-auto px-12 pb-20">
+<section className="max-w-6xl mx-auto px-12 pb-20">
 
   {/* TÍTULO */}
   <div className="flex items-center gap-4 my-10">
