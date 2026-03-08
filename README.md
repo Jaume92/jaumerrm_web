@@ -1,79 +1,98 @@
-jaumerrm.dev — Portfolio Profesional
-Sitio web personal de Jaume Ruiz — AI Engineer con enfoque en sistemas aplicados a entornos reales: industria, automatización y negocio.
-https://jaumerrm.dev
+<div align="center">
+```
+   _       _    _   _ __  __ ___ ____  __  __
+  | | __ _| |  | | | |  \/  | __| __ \|  \/  |
+  | |/ _` | |  | | | | |\/| | _||    /| |\/| |
+  |_|\__,_|_|  |_|_|_|_|  |_|___|_|\_\|_|  |_|
+```
+Jaume Ruiz — AI Engineer
+Building AI systems that work in the real world.
+Mostrar imagen
+Mostrar imagen
+Mostrar imagen
+</div>
 
 Sobre este proyecto
-Este portfolio es mi presencia profesional en la red. Está diseñado para mostrar de forma clara y directa quién soy, qué construyo y cómo pienso sobre la ingeniería de IA.
-No es un portfolio académico. Es una muestra de sistemas reales: visión artificial, RAG, agentes, APIs y aplicaciones que alguien puede usar en una empresa mañana.
-
-Contenido
-
-Proyectos de IA aplicada — Computer Vision, LLMs, sistemas RAG, automatización
-Perfil profesional — Formación, stack técnico y trayectoria
-Demos e integraciones — Ejemplos funcionales de sistemas construidos
-Contacto — Vías directas para colaborar o contratar
-
+Este repositorio contiene el código fuente de mi portfolio profesional en jaumerrm.dev.
+No es un portfolio académico. Es la muestra de lo que construyo: sistemas de IA que alguien puede usar en una empresa mañana. Visión artificial, RAG, agentes, APIs, dashboards industriales.
 
 Proyectos destacados
+<table>
+<tr>
+<td width="50%" valign="top">
 Smoke & Fire Detection AI
 Sistema de visión artificial para detección de humo e incendios en tiempo real.
-
-Stack: Python, YOLOv8, PyTorch, RunPod
-Dataset: Fire & Smoke datasets + COCO + imágenes negativas
-Uso potencial: Seguridad industrial, monitorización con cámaras, prevención de incendios
-
-
+Stack
+Python YOLOv8 PyTorch RunPod
+Dataset propio: Fire & Smoke + COCO + imágenes negativas. Entrenado en GPUs cloud.
+Uso potencial: seguridad industrial, monitorización perimetral, prevención de incendios.
+</td>
+<td width="50%" valign="top">
 Lean AI Assistant
-Asistente conversacional especializado en Lean Manufacturing basado en RAG.
-
-Stack: Python, LangChain, Qdrant, LLM, Streamlit
-Funcionalidad: Consultas sobre OEE, Takt Time, desperdicios (muda) y eficiencia de procesos en lenguaje natural
-Orientado a: Operarios, ingenieros de proceso y equipos de mejora continua
-
-
+Asistente RAG especializado en Lean Manufacturing.
+Stack
+Python LangChain Qdrant LLM Streamlit
+Consultas en lenguaje natural sobre OEE, Takt Time, desperdicios (muda) y eficiencia de proceso.
+Orientado a: ingenieros de proceso, operarios y equipos de mejora continua.
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 Smart Factory Control Tower
-Sistema de monitorización industrial en tiempo real.
+Dashboard de monitorización industrial en tiempo real.
+Stack
+Python FastAPI WebSockets
+Seguimiento de máquinas, producción y métricas operativas. Arquitectura inspirada en digital factory.
+</td>
+<td width="50%" valign="top">
+Polleria App
+SaaS de gestión para negocio local. Caso real.
+Stack
+Python FastAPI WebSockets Tablets
+TPV + pedidos + red local. Modelo de negocio: hardware + suscripción mensual.
+</td>
+</tr>
+</table>
 
-Stack: Python, FastAPI, WebSockets
-Funcionalidad: Seguimiento de máquinas, producción y métricas operativas en un dashboard centralizado
-Inspirado en arquitecturas de digital factory
-
-
-Polleria App — SaaS para negocio local
-Sistema TPV y gestión de pedidos para pequeños negocios.
-
-Stack: Python, FastAPI, WebSockets, red local, tablets
-Modelo de negocio: Hardware + suscripción mensual
-Caso real: Diseñado e implementado para una pollería
-
-
-Tecnologías
-IA y Machine Learning:
-Python, PyTorch, Scikit-learn, YOLOv8, Transformers, LangChain, LlamaIndex, LangGraph, CrewAI
-Datos y bases de datos vectoriales:
-Pandas, NumPy, Qdrant, SQL
-Backend y APIs:
-FastAPI, APIs REST, WebSockets
-Frontend:
-Next.js, React, TypeScript, TailwindCSS
-Infraestructura:
-Vercel, RunPod, AWS S3
+Stack tecnológico
+IA / ML          Python · PyTorch · Scikit-learn · YOLOv8 · Transformers
+LLM Systems      LangChain · LlamaIndex · LangGraph · CrewAI · RAG
+Vector DB        Qdrant
+Backend          FastAPI · REST APIs · WebSockets
+Frontend         Next.js · React · TypeScript · TailwindCSS
+Datos            Pandas · NumPy · SQL
+Infra            Vercel · RunPod · AWS S3
 
 Desarrollo local
-Clonar el repositorio:
+bash# Clonar el repositorio
 git clone https://github.com/Jaume92/jaumerrm_web.git
 cd jaumerrm_web
-Instalar dependencias:
+
+# Instalar dependencias
 npm install
-Ejecutar entorno de desarrollo:
+
+# Ejecutar en local
 npm run dev
+Abre http://localhost:3000 en tu navegador.
 
 Despliegue
-El sitio está desplegado en Vercel y disponible en https://jaumerrm.dev
+Desplegado en Vercel. Cada push a main actualiza el sitio automáticamente.
+Disponible en: https://jaumerrm.dev
 
-Autor
+Mejoras previstas
+
+ Sistema de filtrado de proyectos por tecnología
+ Sección de artículos técnicos
+ Formulario de contacto integrado
+ Optimización SEO
+ Demos interactivas embebidas
+
+
+<div align="center">
 Jaume Ruiz — AI Engineer
-Enfocado en inteligencia artificial aplicada, automatización industrial y desarrollo de sistemas productivos. Experiencia previa en ingeniería mecánica y diseño industrial aplicada ahora a construir sistemas de IA que funcionan en entornos reales.
-LinkedIn: linkedin.com/in/jaumerrm
+Formación en ingeniería mecánica y diseño industrial, reconvertida en sistemas de IA aplicada.
+Enfocado en industria, automatización y productos que resuelven problemas reales.
+jaumerrm.dev · linkedin.com/in/jaumerrm · github.com/Jaume92
+</div>
 GitHub: github.com/Jaume92
 Web: jaumerrm.dev
