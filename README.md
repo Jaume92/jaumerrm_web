@@ -1,98 +1,79 @@
-Portfolio Profesional — jaumerrm.dev
-
-Sitio web personal diseñado para mostrar proyectos de inteligencia artificial aplicada, automatización y desarrollo de sistemas basados en datos orientados a casos reales y entornos productivos.
-
-Este portfolio centraliza mis proyectos técnicos, perfil profesional y vías de contacto.
-
-Objetivo del Proyecto
-
-El objetivo principal de esta web es:
-
-Presentar proyectos de IA aplicada y desarrollo de software
-
-Mostrar soluciones técnicas orientadas a producción
-
-Ofrecer una presencia profesional online para empresas y reclutadores
-
-Centralizar enlaces a proyectos, GitHub y datos de contacto
-
-Contenido Destacado
-
-El portfolio incluye:
-
-Proyectos de inteligencia artificial aplicada
-
-Sistemas de visión artificial
-
-Automatización de procesos
-
-Aplicaciones backend y APIs
-
-Soluciones orientadas a negocio e industria
-
-Tecnologías Utilizadas
-
-TypeScript
-
-HTML
-
-CSS
-
-Framework frontend moderno
-
-Diseño responsive
-
-Estructura del Proyecto
-/public
-/src
-/assets
-/components
-/pages
-
-
-La estructura está pensada para ser modular, escalable y fácil de mantener.
-
-Despliegue
-
-El sitio web está disponible públicamente en:
-
+jaumerrm.dev — Portfolio Profesional
+Sitio web personal de Jaume Ruiz — AI Engineer con enfoque en sistemas aplicados a entornos reales: industria, automatización y negocio.
 https://jaumerrm.dev
 
-Desarrollo Local
+Sobre este proyecto
+Este portfolio es mi presencia profesional en la red. Está diseñado para mostrar de forma clara y directa quién soy, qué construyo y cómo pienso sobre la ingeniería de IA.
+No es un portfolio académico. Es una muestra de sistemas reales: visión artificial, RAG, agentes, APIs y aplicaciones que alguien puede usar en una empresa mañana.
 
+Contenido
+
+Proyectos de IA aplicada — Computer Vision, LLMs, sistemas RAG, automatización
+Perfil profesional — Formación, stack técnico y trayectoria
+Demos e integraciones — Ejemplos funcionales de sistemas construidos
+Contacto — Vías directas para colaborar o contratar
+
+
+Proyectos destacados
+Smoke & Fire Detection AI
+Sistema de visión artificial para detección de humo e incendios en tiempo real.
+
+Stack: Python, YOLOv8, PyTorch, RunPod
+Dataset: Fire & Smoke datasets + COCO + imágenes negativas
+Uso potencial: Seguridad industrial, monitorización con cámaras, prevención de incendios
+
+
+Lean AI Assistant
+Asistente conversacional especializado en Lean Manufacturing basado en RAG.
+
+Stack: Python, LangChain, Qdrant, LLM, Streamlit
+Funcionalidad: Consultas sobre OEE, Takt Time, desperdicios (muda) y eficiencia de procesos en lenguaje natural
+Orientado a: Operarios, ingenieros de proceso y equipos de mejora continua
+
+
+Smart Factory Control Tower
+Sistema de monitorización industrial en tiempo real.
+
+Stack: Python, FastAPI, WebSockets
+Funcionalidad: Seguimiento de máquinas, producción y métricas operativas en un dashboard centralizado
+Inspirado en arquitecturas de digital factory
+
+
+Polleria App — SaaS para negocio local
+Sistema TPV y gestión de pedidos para pequeños negocios.
+
+Stack: Python, FastAPI, WebSockets, red local, tablets
+Modelo de negocio: Hardware + suscripción mensual
+Caso real: Diseñado e implementado para una pollería
+
+
+Tecnologías
+IA y Machine Learning:
+Python, PyTorch, Scikit-learn, YOLOv8, Transformers, LangChain, LlamaIndex, LangGraph, CrewAI
+Datos y bases de datos vectoriales:
+Pandas, NumPy, Qdrant, SQL
+Backend y APIs:
+FastAPI, APIs REST, WebSockets
+Frontend:
+Next.js, React, TypeScript, TailwindCSS
+Infraestructura:
+Vercel, RunPod, AWS S3
+
+Desarrollo local
 Clonar el repositorio:
-
 git clone https://github.com/Jaume92/jaumerrm_web.git
 cd jaumerrm_web
-
-
 Instalar dependencias:
-
 npm install
-
-
 Ejecutar entorno de desarrollo:
-
 npm run dev
 
-Mejoras Futuras
-
-Sistema de filtrado de proyectos
-
-Sección de artículos técnicos o blog
-
-Optimización de rendimiento
-
-Mejora de posicionamiento SEO
-
-Integración de formulario de contacto
+Despliegue
+El sitio está desplegado en Vercel y disponible en https://jaumerrm.dev
 
 Autor
-
-Desarrollado por Jaume
-
-Enfocado en inteligencia artificial aplicada, automatización y desarrollo de sistemas productivos.
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Jaume Ruiz — AI Engineer
+Enfocado en inteligencia artificial aplicada, automatización industrial y desarrollo de sistemas productivos. Experiencia previa en ingeniería mecánica y diseño industrial aplicada ahora a construir sistemas de IA que funcionan en entornos reales.
+LinkedIn: linkedin.com/in/jaumerrm
+GitHub: github.com/Jaume92
+Web: jaumerrm.dev
