@@ -241,8 +241,7 @@ Hoy
 <p className="text-sm text-gray-600 mt-1">
 Construyendo sistemas de IA aplicados a problemas reales:
 <strong> RAG systems, Computer Vision con YOLOv8 y aplicaciones LLM</strong>.
-Actualmente estudiando <strong>DAM</strong> y el
-<strong> Grado en Ingeniería Informática (UNED)</strong>.
+Actualmente estudiando <strong>DAM</strong>
 </p>
 </div>
 
