@@ -6,11 +6,12 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const options = [
   {
-    label: "Ver proyectos tecnicos!",
+    label: "Ver proyectos",
     desc: "Sistemas de IA reales",
     href: "/projects",
     bg: "from-orange-500 to-orange-600",
     text: "text-white",
+    border: "",
   },
   {
     label: "Ver CV",
@@ -22,7 +23,7 @@ const options = [
   },
   {
     label: "Contactar",
-    desc: "Hablemos !",
+    desc: "Hablemos de tu proyecto",
     href: "/contact",
     bg: "from-white to-gray-50",
     text: "text-gray-900",
@@ -36,7 +37,6 @@ export function HeroButtons() {
   return (
     <div className="mt-6 relative w-fit">
 
-      {/* BOTÓN PRINCIPAL */}
       <motion.button
         onClick={() => setOpen(!open)}
         whileTap={{ scale: 0.96 }}
@@ -58,17 +58,15 @@ export function HeroButtons() {
         </motion.span>
       </motion.button>
 
-      {/* DROPDOWN */}
       <AnimatePresence>
         {open && (
           <motion.div
             initial={{ opacity: 0, scale: 0.95, y: -8 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: -8 }}
-            transition={{ duration: 0.18, ease: "easeOut" }}
+            transition={{ duration: 0.18 }}
             className="absolute left-0 mt-3 w-64 rounded-2xl border bg-white/95 backdrop-blur-xl shadow-2xl shadow-orange-100 p-2 z-50"
           >
-            {/* PUNTITA */}
             <div className="absolute -top-2 left-6 w-4 h-4 bg-white border-l border-t rotate-45 rounded-sm" />
 
             {options.map((opt, i) => (
@@ -81,11 +79,8 @@ export function HeroButtons() {
                 <Link
                   href={opt.href}
                   onClick={() => setOpen(false)}
-                  className={`flex items-center gap-3 px-4 py-3.5 rounded-xl bg-gradient-to-r ${opt.bg} ${opt.text} ${opt.border ?? ""} hover:-translate-y-0.5 hover:shadow-md transition-all duration-150 mb-1.5 last:mb-0`}
+                  className={`flex items-center px-4 py-3.5 rounded-xl bg-gradient-to-r ${opt.bg} ${opt.text} ${opt.border} hover:-translate-y-0.5 hover:shadow-md transition-all duration-150 mb-1.5 last:mb-0`}
                 >
-                  <span className="text-xl w-8 h-8 flex items-center justify-center rounded-lg bg-white/40">
-                    {opt.emoji}
-                  </span>
                   <div>
                     <div className="font-semibold text-sm">{opt.label}</div>
                     <div className={`text-xs mt-0.5 ${opt.text === "text-white" ? "text-orange-100" : "text-gray-400"}`}>
