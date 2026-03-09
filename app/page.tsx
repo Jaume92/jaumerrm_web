@@ -4,6 +4,7 @@ import Reveal from "@/components/Reveal";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
+import { HeroButtons } from "@/components/HeroButtons";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -112,24 +113,9 @@ export default function Home() {
                 </span>
               </motion.div>
             ))}
-          </motion.div>
-
-          {/* BOTONES */}
-          <div className="mt-6 flex flex-wrap gap-3">
-            <Link
-              href="/projects"
-              className="px-6 py-3 rounded-lg bg-orange-500 text-white font-medium transition hover:bg-orange-600 hover:scale-[1.03] w-full sm:w-auto"
-            >
-              Ver proyectos técnicos
-            </Link>
-            <Link
-              href="/contact"
-              className="px-6 py-3 rounded-lg border font-medium transition hover:bg-orange-100 hover:scale-[1.03] w-full sm:w-auto"
-            >
-              Contactar
-            </Link>
-          </div>
-
+           </motion.div>
+             {/* BOTONES */}
+            <HeroButtons />
           {/* FIX: Métricas con más contexto */}
           <div className="mt-6 grid grid-cols-2 gap-6 md:flex md:gap-8">
             <div className="text-center">
@@ -500,7 +486,7 @@ className="px-3 py-3 rounded-lg border border-orange-200 bg-orange-50 text-xs fo
       </a>
 
       <a
-        href="www.linkedin.com/in/jaume-ruiz-ruano-marcos"
+        href="https://www.linkedin.com/in/TU-USUARIO-AQUI"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-orange-600 transition"
