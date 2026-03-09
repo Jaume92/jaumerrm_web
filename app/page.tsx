@@ -15,7 +15,7 @@ export default function Home() {
     { name: "Machine Learning", icon: "/icons/pytorch.svg" },
     { name: "Power BI", icon: "/icons/powerbi.svg" },
     { name: "Next.js", icon: "/icons/nextjs.svg" },
-    { name: "Docker", icon: "/icons/docker.svg" }, // FIX: era "Docker.js"
+    { name: "Docker", icon: "/icons/docker.svg" }, 
   ];
 
   return (
@@ -65,23 +65,23 @@ export default function Home() {
         {/* TEXTO */}
         <div className="md:ml-16">
           <span className="inline-block mb-3 px-3 py-1 text-xs rounded-full bg-orange-100 text-orange-700">
-            AI Engineer · Automatización · Computer Vision
+            AI Engineer · Digitalización Industrial · Consultoría IA
           </span>
 
-          {/* FIX: H1 más específico y diferenciador */}
-          <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold leading-tight">
-            AI Engineer especializado en{" "}
-            <span className="text-orange-500">RAG, Computer Vision</span>{" "}
-            y automatización industrial.
-          </h1>
+          {/* H1 orientado a Lean Best / consultoría digital */}
+              <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold leading-tight">
+                 Digitalización industrial y{" "}
+                  <span className="text-orange-500">sistemas de IA</span>{" "}
+                     aplicados a operaciones reales.
+                         </h1>
 
-          {/* FIX: Descripción dentro del <p> y con contenido real */}
-          <p className="mt-4 text-base md:text-lg text-gray-600 max-w-xl">
-            Construyo sistemas de IA que funcionan en entornos reales: fábricas,
-            negocios y procesos operativos. Background en ingeniería mecánica aplicado
-            a soluciones de IA industriales.
-          </p>
-
+          {/* FIX */}
+              <section className="max-w-5xl mx-auto px-6 pb-16">
+               <div className="p-4 rounded-xl bg-orange-100 text-orange-800 text-sm">
+                    Background industrial + inteligencia artificial aplicada.
+                     Construyo sistemas de IA diseñados para funcionar en entornos reales, no solo en notebooks.
+                   </div>
+              </section>
           {/* STACK */}
           <motion.div
             className="mt-4 flex flex-wrap gap-2 text-xs md:text-sm"
@@ -140,10 +140,7 @@ export default function Home() {
               <div className="text-3xl font-bold">3</div>
               <div className="text-sm text-gray-600">Sistemas en producción</div>
             </div>
-            <div className="text-center col-span-2 md:col-span-1">
-              <div className="text-3xl font-bold">5+</div>
-              <div className="text-sm text-gray-600">Años en ingeniería</div>
-            </div>
+            
           </div>
         </div>
 
@@ -503,7 +500,7 @@ className="px-3 py-3 rounded-lg border border-orange-200 bg-orange-50 text-xs fo
       </a>
 
       <a
-        href="https://www.linkedin.com/in/TU-USUARIO-AQUI"
+        href="www.linkedin.com/in/jaume-ruiz-ruano-marcos"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-orange-600 transition"
