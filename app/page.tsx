@@ -76,13 +76,7 @@ export default function Home() {
                      aplicados a operaciones reales.
                          </h1>
 
-          {/* FIX */}
-              <section className="max-w-5xl mx-auto px-6 pb-16">
-               <div className="p-4 rounded-xl bg-orange-100 text-orange-800 text-sm">
-                    Background industrial + inteligencia artificial aplicada.
-                     Construyo sistemas de IA diseñados para funcionar en entornos reales, no solo en notebooks.
-                   </div>
-              </section>
+          
           {/* STACK */}
           <motion.div
             className="mt-4 flex flex-wrap gap-2 text-xs md:text-sm"
@@ -118,16 +112,26 @@ export default function Home() {
             <HeroButtons />
           {/* FIX: Métricas con más contexto */}
           <div className="mt-6 grid grid-cols-2 gap-6 md:flex md:gap-8">
-            <div className="text-center">
-              <div className="text-3xl font-bold">6+</div>
-              <div className="text-sm text-gray-600">Proyectos reales</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold">3</div>
-              <div className="text-sm text-gray-600">Sistemas en producción</div>
-            </div>
-            
-          </div>
+                       {[
+                      { value: "6+", label: "Proyectos reales" },
+                       { value: "3", label: "Sistemas en producción" },
+                  ].map((stat, i) => (
+                     <motion.div
+                    key={stat.label}
+                     className="text-center cursor-default"
+                        whileHover={{
+                   x: i % 2 === 0 ? -25 : 15,
+                           y: -10,
+          rotate: i % 2 === 0 ? -8 : 8,
+            scale: 1.30,
+         transition: { type: "spring", stiffness: 400, damping: 8 }
+         }}
+       >
+      <div className="text-3xl font-bold">{stat.value}</div>
+      <div className="text-sm text-gray-600">{stat.label}</div>
+    </motion.div>
+  ))}
+   </div>
         </div>
 
         {/* IMAGEN */}
@@ -149,7 +153,7 @@ export default function Home() {
       <section className="max-w-5xl mx-auto px-6 pb-16">
         <div className="p-4 rounded-xl bg-orange-100 text-orange-800 text-sm">
           Background industrial + inteligencia artificial aplicada.
-Construyo sistemas de IA diseñados para funcionar en entornos reales, no solo en notebooks.
+       Construyo sistemas de IA diseñados para funcionar en entornos reales, no solo en notebooks.
         </div>
       </section>
 
