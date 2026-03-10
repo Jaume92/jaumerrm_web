@@ -298,10 +298,10 @@ export default function Projects() {
               y seguimiento comercial ejecutivo.
             </p>
             <div className="mt-6">
-              <h3 className="font-semibold text-sm">Manufacturing Performance — Lean Operations</h3>
+              <h3 className="font-semibold text-sm">Machine Downtime — Análisis de paradas </h3>
               <p className="mt-1 text-sm text-gray-600">
-                Análisis de eficiencia operativa por línea productiva y periodo. KPIs Lean:
-                productividad, output, rendimiento e identificación de cuellos de botella.
+                 Disponibilidad de equipos, causas raíz de paradas e impacto operativo.
+                Orientado a soporte de mantenimiento preventivo y reducción de pérdidas productivas.
               </p>
               <img
                 src="/projects/powerbi_1.png"
@@ -310,10 +310,11 @@ export default function Projects() {
               />
             </div>
             <div className="mt-6">
-              <h3 className="font-semibold text-sm">Machine Downtime — Análisis de paradas</h3>
+              <h3 className="font-semibold text-sm">Manufacturing Performance — Lean Operations</h3>
               <p className="mt-1 text-sm text-gray-600">
-                Disponibilidad de equipos, causas raíz de paradas e impacto operativo.
-                Orientado a soporte de mantenimiento preventivo y reducción de pérdidas productivas.
+                Análisis de eficiencia operativa por línea productiva y periodo. KPIs Lean:
+                productividad, output, rendimiento e identificación de cuellos de botella.
+                
               </p>
               <img
                 src="/projects/powerbi_2.png"
