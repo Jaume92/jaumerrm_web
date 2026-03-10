@@ -50,14 +50,14 @@ export function HeroButtons() {
 
       <motion.button
         onClick={() => setOpen(!open)}
-        whileTap={{ scale: 0.96 }}
+        whileTap={{ scale: 1.10 }}
         className="inline-flex items-center gap-3 px-6 py-3.5 rounded-2xl bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold shadow-lg shadow-orange-200 hover:shadow-xl hover:shadow-orange-300 hover:-translate-y-0.5 transition-all duration-200 text-sm"
       >
         <motion.span animate={{ rotate: open ? 45 : 0 }} transition={{ duration: 0.2 }}>
           ✦
         </motion.span>
 
-        {open ? "Cerrar menú" : "¿Por dónde empezamos?"}
+        {open ? "Cerrar menú" : "Explora mi trabajo !"}
 
         <motion.span animate={{ rotate: open ? 180 : 0 }} transition={{ duration: 0.2 }}>
           ↓

@@ -23,11 +23,11 @@ export default function CVPage() {
       availability: "Disponible para nuevas oportunidades",
 
       summary:
-        "Junior AI Engineer especializado en Computer Vision, sistemas RAG y automatización con Python. Construyo herramientas de IA orientadas a digitalizar procesos operativos e industriales — con criterio de ingeniero, no solo de programador.",
+        "Junior AI Engineer // Computer Vision, sistemas RAG y automatización con Python. Construyo herramientas de IA orientadas a digitalizar procesos operativos e industriales — con criterio de ingeniero, no solo de programador.",
 
       profileTitle: "Perfil Profesional",
       profilePoints: [
-        "Transición autodidacta hacia IA aplicada con proyectos reales desplegados.",
+        "Transición  hacia IA aplicada con proyectos reales desplegados.",
         "Orientación a resultados: automatización, digitalización y optimización de procesos.",
         "Capacidad para aprender rápido y adaptarme a entornos técnicos exigentes.",
         "Mentalidad de producto: construir soluciones útiles, no solo código.",
@@ -268,7 +268,7 @@ export default function CVPage() {
                 Contactar
               </Link>
               <a
-                href="/Jaume_RuizRuano_LeanBest.pdf"
+                href="/Jaume_Ruiz_CV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-5 py-2.5 rounded-lg border text-sm font-medium hover:bg-gray-50 transition"

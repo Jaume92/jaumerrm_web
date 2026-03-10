@@ -232,18 +232,7 @@ Construyendo sistemas de IA enfocados en aplicaciones reales y reforzando
 mi base de ingeniería de software estudiando <strong>DAM</strong>.
 </p>
 </div>
-{/* ACTUALIDAD */}
-<div className="relative">
-<div className="absolute -left-[38px] top-1 w-4 h-4 bg-orange-400 rounded-full border-4 border-white"></div>
-<h3 className="font-semibold text-gray-800">
-Hoy
-</h3>
-<p className="text-sm text-gray-600 mt-1">
-Construyendo sistemas de IA aplicados a problemas reales:
-<strong> RAG systems, Computer Vision con YOLOv8 y aplicaciones LLM</strong>.
-Actualmente estudiando <strong>DAM</strong>
-</p>
-</div>
+
 
 </div>
 
@@ -257,7 +246,7 @@ Actualmente estudiando <strong>DAM</strong>
 "YOLOv8",
 "FastAPI",
 "LangChain",
-"Vector Databases",
+"Powerbi",
 "PyTorch"
 ].map((skill) => (
 <div
