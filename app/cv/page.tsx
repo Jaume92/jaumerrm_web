@@ -19,7 +19,7 @@ export default function CVPage() {
   const content = {
     es: {
       title: "Currículum",
-      role: "Junior AI Engineer · Computer Vision · Digitalización Industrial",
+      role: "Digital Consultant · AI & Automation",
       availability: "Disponible para nuevas oportunidades",
 
       summary:
@@ -113,7 +113,7 @@ export default function CVPage() {
 
     en: {
       title: "Resume",
-      role: "Junior AI Engineer · Computer Vision · Industrial Digitalization",
+      role: "Digital Consultant · Computer Vision · Industrial Digitalization",
       availability: "Open to new opportunities",
 
       summary:

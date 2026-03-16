@@ -66,7 +66,7 @@ export default function Home() {
         {/* TEXTO */}
         <div className="md:ml-16">
           <span className="inline-block mb-3 px-3 py-1 text-xs rounded-full bg-orange-100 text-orange-700">
-            AI Engineer · Digitalización Industrial · Consultoría IA
+            Digital Consultant · AI & Automation · Consultoría IA
           </span>
 
           {/* H1 orientado a Lean Best / consultoría digital */}
@@ -228,8 +228,9 @@ Desarrollo de sistemas aplicados de inteligencia artificial incluyendo
 Hoy
 </h3>
 <p className="text-sm text-gray-600 mt-1">
-Construyendo sistemas de IA enfocados en aplicaciones reales y reforzando
-mi base de ingeniería de software estudiando <strong>DAM</strong>.
+  Trabajando como <strong>Digital Consultant en Goodwork by Lean Best</strong>, desarrollando soluciones de
+  digitalización, automatización y análisis de datos para entornos reales,
+  mientras refuerzo mi base de ingeniería de software estudiando <strong>DAM</strong>.
 </p>
 </div>
 
@@ -465,7 +466,7 @@ className="px-3 py-3 rounded-lg border border-orange-200 bg-orange-50 text-xs fo
 
   <div className="max-w-5xl mx-auto px-6 py-8 text-sm text-gray-500 flex flex-col md:flex-row justify-between items-center gap-3">
 
-    <span>© {new Date().getFullYear()} Jaume Ruiz — Portfolio técnico</span>
+    <span>© {new Date().getFullYear()} Jaume RRM — Portfolio técnico</span>
 
     <div className="flex gap-4">
       <a

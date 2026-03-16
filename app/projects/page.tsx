@@ -344,7 +344,7 @@ export default function Projects() {
                 rel="noopener noreferrer"
                 className="px-4 py-2 text-sm rounded-lg border transition hover:bg-gray-100"
               >
-                Ver repositorio
+                Ver repositorio !
               </a>
             </div>
           </motion.div>
