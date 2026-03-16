@@ -23,7 +23,7 @@ export default function CVPage() {
       availability: "Disponible para nuevas oportunidades",
 
       summary:
-        "Junior AI Engineer // Computer Vision, sistemas RAG y automatización con Python. Construyo herramientas de IA orientadas a digitalizar procesos operativos e industriales — con criterio de ingeniero, no solo de programador.",
+        "Consultor digital // Computer Vision, sistemas RAG y automatización con Python. Construyo herramientas de IA orientadas a digitalizar procesos operativos e industriales — con criterio de ingeniero, no solo de programador.",
 
       profileTitle: "Perfil Profesional",
       profilePoints: [
@@ -117,7 +117,7 @@ export default function CVPage() {
       availability: "Open to new opportunities",
 
       summary:
-        "Junior AI Engineer specialized in Computer Vision, RAG systems and Python automation. I build AI tools focused on digitalizing operational and industrial processes — with an engineer's mindset, not just a programmer's.",
+        "Digital consultant specialized in Computer Vision, RAG systems and Python automation. I build AI tools focused on digitalizing operational and industrial processes — with an engineer's mindset, not just a programmer's.",
 
       profileTitle: "Professional Profile",
       profilePoints: [
