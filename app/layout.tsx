@@ -1,5 +1,6 @@
 import "./globals.css";
 import Script from "next/script";
+import SiteNav from "@/components/SiteNav";
 
 export const metadata = {
   title: "Jaume Ruiz — Portfolio",
@@ -15,7 +16,7 @@ export default function RootLayout({
     <html lang="es">
       <body>
 
-        <Script
+        {process.env.NODE_ENV === "production" && <Script
           id="clarity-script"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -27,19 +28,12 @@ export default function RootLayout({
               })(window, document, "clarity", "script", "v5uz6y7t6t");
             `,
           }}
-        />
+        />}
 
+        <SiteNav />
         {children}
 
       </body>
     </html>
   );
 }
-
-
-
-
-
-
-
-

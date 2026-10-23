@@ -58,7 +58,7 @@ const contacts = [
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-white via-orange-50 to-white px-6 py-20">
+    <main id="main-content" className="min-h-screen bg-gradient-to-br from-white via-orange-50 to-white px-6 py-20">
       <div className="max-w-3xl mx-auto">
 
         {/* NAV */}

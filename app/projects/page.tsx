@@ -26,7 +26,7 @@ export default function Projects() {
   const [currentPolleria, setCurrentPolleria] = useState(0);
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-white via-orange-50 to-white text-gray-900 px-6 py-16">
+    <main id="main-content" className="min-h-screen bg-gradient-to-br from-white via-orange-50 to-white text-gray-900 px-6 py-16">
       <div className="max-w-5xl mx-auto">
 
         <div className="mb-8">
@@ -41,7 +41,7 @@ export default function Projects() {
         <motion.div className="mb-12" initial="hidden" animate="show" variants={fadeUp}>
           <h1 className="text-3xl md:text-4xl font-bold">Proyectos reales</h1>
           <p className="mt-4 text-gray-600 max-w-2xl">
-            Proyectos construidos buscando solucionar neccesidades
+            Proyectos construidos buscando solucionar necesidades
           </p>
         </motion.div>
 
@@ -107,7 +107,7 @@ export default function Projects() {
             </div>
           </motion.div>
 
-          {/* 2️⃣ DETECTOR HUMO */}
+          <span id="vision" className="section-anchor" />
           <motion.div variants={fadeUp} className="rounded-xl border bg-white/70 backdrop-blur p-6 shadow-sm transition hover:shadow-md">
             <h2 className="text-xl font-semibold">
               Detector de humo y fuego — Computer Vision
@@ -148,7 +148,7 @@ export default function Projects() {
 
           {/* 3️⃣ SMART FACTORY */}
           <motion.div variants={fadeUp} className="rounded-xl border bg-white/70 backdrop-blur p-6 shadow-sm transition hover:shadow-md">
-            <h2 className="text-xl font-semibold">
+            <h2 id="factory" className="text-xl font-semibold section-anchor">
               Smart Factory Control Tower — Lean Analytics
             </h2>
             <p className="mt-3 text-sm text-gray-600">
@@ -180,7 +180,7 @@ export default function Projects() {
             </p>
           </motion.div>
 
-          {/* 4️⃣ POLLERIA */}
+          <span id="polleria" className="section-anchor" />
           <motion.div variants={fadeUp} className="rounded-xl border bg-white/70 backdrop-blur p-6 shadow-sm transition hover:shadow-md">
             <h2 className="text-xl font-semibold">
               Pollería App — Sistema de pedidos automatizado
@@ -252,7 +252,7 @@ export default function Projects() {
 
           {/* 5️⃣ EXPENSE TRACKER */}
           <motion.div variants={fadeUp} className="rounded-xl border bg-white/70 backdrop-blur p-6 shadow-sm transition hover:shadow-md">
-            <h2 className="text-xl font-semibold">
+            <h2 id="expense" className="text-xl font-semibold section-anchor">
               AI Expense Tracker OCR — Automatización financiera
             </h2>
             <p className="mt-3 text-sm text-gray-600">
@@ -289,7 +289,7 @@ export default function Projects() {
 
           {/* 6️⃣ POWER BI */}
           <motion.div variants={fadeUp} className="rounded-xl border bg-white/70 backdrop-blur p-6 shadow-sm transition hover:shadow-md">
-            <h2 className="text-xl font-semibold">
+            <h2 id="powerbi" className="text-xl font-semibold section-anchor">
               Power BI Portfolio — Lean & Business Analytics
             </h2>
             <p className="mt-3 text-sm text-gray-600">

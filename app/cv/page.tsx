@@ -19,11 +19,11 @@ export default function CVPage() {
   const content = {
     es: {
       title: "Currículum",
-      role: "Digital Consultant · AI & Automation",
+      role: "Consultor de Transformación Digital · Power BI · Python · IA aplicada",
       availability: "Disponible para nuevas oportunidades",
 
       summary:
-        "Consultor digital // Computer Vision, sistemas RAG y automatización con Python. Construyo herramientas de IA orientadas a digitalizar procesos operativos e industriales — con criterio de ingeniero, no solo de programador.",
+        "Consultor de transformación digital en Goodwork by Lean Best. Combino experiencia industrial e IA aplicada para analizar procesos, desarrollar soluciones digitales y automatizar tareas con Python. Construyo dashboards con Power BI y proyectos con FastAPI, sistemas RAG y Computer Vision. Mi enfoque: entender la operación y convertir sus necesidades en herramientas útiles.",
 
       profileTitle: "Perfil Profesional",
       profilePoints: [
@@ -35,22 +35,17 @@ export default function CVPage() {
 
       experienceTitle: "Experiencia Profesional",
       experience: {
-        company: "ContourGlobal — Planta Termosolar Alvarado",
-        role: "Técnico Polivalente Industrial",
-        date: "2025 — Actualidad",
+        company: "Goodwork by Lean Best",
+        role: "Consultor de Transformación Digital",
+        date: "Mayo 2026 — Actualidad",
         responsibilities: [
-          "Supervisión de procesos industriales en bloque de potencia y campo solar mediante SCADA / HMI.",
-          "Monitorización continua de variables críticas (temperatura, presión, caudal).",
-          "Apoyo en mantenimiento preventivo y correctivo de equipos electromecánicos.",
-          "Gestión de incidencias técnicas en coordinación con equipos de operación.",
-          "Aplicación estricta de protocolos de seguridad industrial.",
+          "Análisis de procesos y necesidades de negocio para identificar oportunidades de digitalización.",
+          "Definición y desarrollo de soluciones digitales orientadas a procesos y operaciones.",
+          "Desarrollo de dashboards y análisis de datos con Power BI.",
+          "Uso de Python para tratamiento de datos y automatización de tareas.",
         ],
-        achievements: [
-          "Mejora de la estabilidad operativa mediante detección temprana de anomalías.",
-          "Reducción de tiempos de respuesta ante incidencias técnicas.",
-          "Participación activa en optimización de eficiencia energética.",
-        ],
-        tools: ["SCADA / HMI", "Sistemas industriales", "Linux", "Protocolos de seguridad"],
+        achievements: [],
+        tools: ["Power BI", "Python", "Análisis de procesos", "Transformación digital"],
       },
 
       educationTitle: "Formación Académica",
@@ -88,13 +83,13 @@ export default function CVPage() {
       projects: [
         {
           name: "Lean AI Assistant — RAG Industrial",
-          desc: "Asistente RAG especializado en Lean Manufacturing. Consulta de documentación técnica en lenguaje natural con latencia media ~5s.",
+          desc: "Asistente RAG especializado en Lean Manufacturing. Consulta de documentación técnica en lenguaje natural con recuperación contextual.",
           stack: ["Python", "LangChain", "Qdrant", "FastAPI"],
           link: "https://leanrag-fpayub2h46ogjcnn3kquub.streamlit.app/",
         },
         {
           name: "Detector de humo y fuego — Computer Vision",
-          desc: "Modelo YOLOv8 para detección en tiempo real. mAP@0.5: 0.76, reducción de falsos positivos ~30%.",
+          desc: "Modelo YOLOv8 para detección en tiempo real, con pipeline de vídeo y filtrado temporal para reducir falsos positivos.",
           stack: ["Python", "YOLOv8", "OpenCV", "PyTorch"],
           link: "https://github.com/Jaume92/Proyecto_detector_humo_YoloV8",
         },
@@ -113,11 +108,11 @@ export default function CVPage() {
 
     en: {
       title: "Resume",
-      role: "Digital Consultant · Computer Vision · Industrial Digitalization",
+      role: "Digital Transformation Consultant · Power BI · Python · Applied AI",
       availability: "Open to new opportunities",
 
       summary:
-        "Digital consultant specialized in Computer Vision, RAG systems and Python automation. I build AI tools focused on digitalizing operational and industrial processes — with an engineer's mindset, not just a programmer's.",
+        "Digital Transformation Consultant at Goodwork by Lean Best, focused on processes, digital solutions, Power BI and Python. Experience with Computer Vision, RAG systems and automation. I build AI tools focused on digitalizing operational and industrial processes — with an engineer's mindset, not just a programmer's.",
 
       profileTitle: "Professional Profile",
       profilePoints: [
@@ -129,22 +124,17 @@ export default function CVPage() {
 
       experienceTitle: "Professional Experience",
       experience: {
-        company: "ContourGlobal — Alvarado Solar Power Plant",
-        role: "Industrial Multi-skilled Technician",
-        date: "2025 — Present",
+        company: "Goodwork by Lean Best",
+        role: "Digital Transformation Consultant",
+        date: "May 2026 — Present",
         responsibilities: [
-          "Supervision of industrial processes using SCADA / HMI.",
-          "Monitoring of critical variables (temperature, pressure, flow).",
-          "Preventive and corrective maintenance support.",
-          "Technical incident management.",
-          "Industrial safety compliance.",
+          "Analyze business processes and needs to identify digitalization opportunities.",
+          "Define and develop digital solutions for processes and operations.",
+          "Build dashboards and analyze data with Power BI.",
+          "Use Python for data processing and task automation.",
         ],
-        achievements: [
-          "Improved operational stability through early anomaly detection.",
-          "Reduced response time to technical incidents.",
-          "Contribution to energy efficiency optimization.",
-        ],
-        tools: ["SCADA / HMI", "Industrial systems", "Linux", "Safety protocols"],
+        achievements: [],
+        tools: ["Power BI", "Python", "Process analysis", "Digital transformation"],
       },
 
       educationTitle: "Education",
@@ -209,13 +199,13 @@ export default function CVPage() {
       projects: [
         {
           name: "Lean AI Assistant — Industrial RAG",
-          desc: "RAG assistant specialized in Lean Manufacturing. Natural language queries over technical docs, ~5s average latency.",
+          desc: "RAG assistant specialized in Lean Manufacturing. Natural language queries over technical documentation with contextual retrieval.",
           stack: ["Python", "LangChain", "Qdrant", "FastAPI"],
           link: "https://leanrag-fpayub2h46ogjcnn3kquub.streamlit.app/",
         },
         {
           name: "Smoke & Fire Detector — Computer Vision",
-          desc: "YOLOv8 real-time detection model. mAP@0.5: 0.76, ~30% false positive reduction.",
+          desc: "Real-time YOLOv8 detection model with video processing and temporal filtering to reduce false positives.",
           stack: ["Python", "YOLOv8", "OpenCV", "PyTorch"],
           link: "https://github.com/Jaume92/Proyecto_detector_humo_YoloV8",
         },
@@ -236,7 +226,7 @@ export default function CVPage() {
   const t = content[lang];
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-white via-orange-50 to-white px-6 py-20 text-gray-900">
+    <main id="main-content" className="min-h-screen bg-gradient-to-br from-white via-orange-50 to-white px-6 py-20 text-gray-900">
       <div className="max-w-5xl mx-auto">
 
         {/* HERO */}
@@ -341,23 +331,16 @@ export default function CVPage() {
                 </span>
               </div>
 
-              <div className="grid sm:grid-cols-2 gap-6 text-sm">
+              <div className="text-sm">
                 <div>
-                  <h4 className="font-medium mb-2">Responsabilidades</h4>
+                  <h4 className="font-medium mb-2">{lang === "es" ? "Responsabilidades" : "Responsibilities"}</h4>
                   <ul className="space-y-1 text-gray-600">
                     {t.experience.responsibilities.map((r, i) => (
                       <li key={i} className="flex gap-2"><span className="text-orange-400">→</span>{r}</li>
                     ))}
                   </ul>
                 </div>
-                <div>
-                  <h4 className="font-medium mb-2">Logros</h4>
-                  <ul className="space-y-1 text-gray-600">
-                    {t.experience.achievements.map((a, i) => (
-                      <li key={i} className="flex gap-2"><span className="text-orange-400">★</span>{a}</li>
-                    ))}
-                  </ul>
-                </div>
+
               </div>
 
               <div className="mt-4 flex flex-wrap gap-2">
@@ -365,6 +348,19 @@ export default function CVPage() {
                   <span key={i} className="px-3 py-1 border rounded-full text-xs bg-gray-50">{tool}</span>
                 ))}
               </div>
+            </div>
+          </motion.section>
+
+          <motion.section variants={fadeUp}>
+            <div className="rounded-xl border bg-white p-6 shadow-sm">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                <div><h3 className="font-semibold">{lang === "es" ? "Técnico Polivalente Industrial" : "Industrial Multi-skilled Technician"}</h3>
+                <p className="text-sm text-gray-500">ContourGlobal - {lang === "es" ? "Planta Termosolar Alvarado" : "Alvarado Solar Power Plant"}</p></div>
+                <span className="text-xs px-3 py-1 rounded-full bg-orange-100 text-orange-700">{lang === "es" ? "Abril 2025 - Mayo 2026" : "April 2025 - May 2026"}</span>
+              </div>
+              <ul className="text-sm text-gray-600 space-y-2">
+                {(lang === "es" ? ["Monitorización de variables de proceso mediante SCADA/HMI.", "Análisis de incidencias operativas y soporte en optimización de procesos.", "Seguimiento de métricas industriales: eficiencia, disponibilidad y rendimiento."] : ["Monitored process variables using SCADA/HMI.", "Analyzed operational incidents and supported process optimization.", "Tracked industrial metrics: efficiency, availability and performance."]).map(point => <li key={point}>→ {point}</li>)}
+              </ul>
             </div>
           </motion.section>
 
@@ -465,3 +461,4 @@ export default function CVPage() {
     </main>
   );
 }
+

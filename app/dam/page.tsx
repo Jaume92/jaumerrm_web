@@ -26,7 +26,7 @@ export default function DamPage() {
   ];
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-white via-orange-50 to-white px-6 py-16 text-gray-900">
+    <main id="main-content" className="min-h-screen bg-gradient-to-br from-white via-orange-50 to-white px-6 py-16 text-gray-900">
       <div className="max-w-6xl mx-auto">
 
         {/* NAV */}
