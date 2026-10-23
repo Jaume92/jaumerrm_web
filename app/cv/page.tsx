@@ -37,7 +37,7 @@ export default function CVPage() {
       experience: {
         company: "Goodwork by Lean Best",
         role: "Consultor de Transformación Digital",
-        date: "Mayo 2026 — Actualidad",
+        date: "Marzo 2026 — Actualidad",
         responsibilities: [
           "Análisis de procesos y necesidades de negocio para identificar oportunidades de digitalización.",
           "Definición y desarrollo de soluciones digitales orientadas a procesos y operaciones.",
@@ -126,7 +126,7 @@ export default function CVPage() {
       experience: {
         company: "Goodwork by Lean Best",
         role: "Digital Transformation Consultant",
-        date: "May 2026 — Present",
+        date: "March 2026 — Present",
         responsibilities: [
           "Analyze business processes and needs to identify digitalization opportunities.",
           "Define and develop digital solutions for processes and operations.",
@@ -356,7 +356,7 @@ export default function CVPage() {
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
                 <div><h3 className="font-semibold">{lang === "es" ? "Técnico Polivalente Industrial" : "Industrial Multi-skilled Technician"}</h3>
                 <p className="text-sm text-gray-500">ContourGlobal - {lang === "es" ? "Planta Termosolar Alvarado" : "Alvarado Solar Power Plant"}</p></div>
-                <span className="text-xs px-3 py-1 rounded-full bg-orange-100 text-orange-700">{lang === "es" ? "Abril 2025 - Mayo 2026" : "April 2025 - May 2026"}</span>
+                <span className="text-xs px-3 py-1 rounded-full bg-orange-100 text-orange-700">{lang === "es" ? "Mayo 2025 - Marzo 2026" : "May 2025 - March 2026"}</span>
               </div>
               <ul className="text-sm text-gray-600 space-y-2">
                 {(lang === "es" ? ["Monitorización de variables de proceso mediante SCADA/HMI.", "Análisis de incidencias operativas y soporte en optimización de procesos.", "Seguimiento de métricas industriales: eficiencia, disponibilidad y rendimiento."] : ["Monitored process variables using SCADA/HMI.", "Analyzed operational incidents and supported process optimization.", "Tracked industrial metrics: efficiency, availability and performance."]).map(point => <li key={point}>→ {point}</li>)}
@@ -461,4 +461,5 @@ export default function CVPage() {
     </main>
   );
 }
+
 
